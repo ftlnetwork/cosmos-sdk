@@ -3,12 +3,12 @@ package cli
 import (
 	"os"
 
-	"github.com/cosmos/cosmos-sdk/client/context"
-	"github.com/cosmos/cosmos-sdk/client/utils"
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtxb "github.com/cosmos/cosmos-sdk/x/auth/client/txbuilder"
-	"github.com/cosmos/cosmos-sdk/x/slashing"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client/context"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client/utils"
+	"github.com/ftlnetwork/ftlnetwork-sdk/codec"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
+	authtxb "github.com/ftlnetwork/ftlnetwork-sdk/x/auth/client/txbuilder"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/slashing"
 
 	"github.com/spf13/cobra"
 )

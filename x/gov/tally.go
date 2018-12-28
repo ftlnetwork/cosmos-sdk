@@ -1,7 +1,7 @@
 package gov
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
 )
 
 // validatorGovInfo used for tallying

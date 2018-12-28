@@ -11,17 +11,17 @@ import (
 	dbm "github.com/tendermint/tendermint/libs/db"
 	"github.com/tendermint/tendermint/libs/log"
 
-	bam "github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/auth"
-	"github.com/cosmos/cosmos-sdk/x/bank"
-	distr "github.com/cosmos/cosmos-sdk/x/distribution"
-	"github.com/cosmos/cosmos-sdk/x/gov"
-	"github.com/cosmos/cosmos-sdk/x/mint"
-	"github.com/cosmos/cosmos-sdk/x/params"
-	"github.com/cosmos/cosmos-sdk/x/slashing"
-	"github.com/cosmos/cosmos-sdk/x/stake"
+	bam "github.com/ftlnetwork/ftlnetwork-sdk/baseapp"
+	"github.com/ftlnetwork/ftlnetwork-sdk/codec"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/auth"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/bank"
+	distr "github.com/ftlnetwork/ftlnetwork-sdk/x/distribution"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/gov"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/mint"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/params"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/slashing"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/stake"
 )
 
 const (
@@ -284,7 +284,7 @@ func (app *GaiaApp) initChainer(ctx sdk.Context, req abci.RequestInitChain) abci
 	var genesisState GenesisState
 	err := app.cdc.UnmarshalJSON(stateJSON, &genesisState)
 	if err != nil {
-		panic(err) // TODO https://github.com/cosmos/cosmos-sdk/issues/468
+		panic(err) // TODO https://github.com/ftlnetwork/ftlnetwork-sdk/issues/468
 		// return sdk.ErrGenesisParse("").TraceCause(err, "")
 	}
 

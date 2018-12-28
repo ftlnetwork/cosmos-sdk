@@ -4,10 +4,10 @@ import (
 	"errors"
 	"fmt"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/auth"
-	"github.com/cosmos/cosmos-sdk/x/mock"
-	"github.com/cosmos/cosmos-sdk/x/mock/simulation"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/auth"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/mock"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/mock/simulation"
 )
 
 // NonnegativeBalanceInvariant checks that all accounts in the application have non-negative balances

@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/stake/types"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/stake/types"
 )
 
 // GenesisState - all slashing state that must be provided at genesis

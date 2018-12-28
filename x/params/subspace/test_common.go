@@ -10,9 +10,9 @@ import (
 	dbm "github.com/tendermint/tendermint/libs/db"
 	"github.com/tendermint/tendermint/libs/log"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/store"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/codec"
+	"github.com/ftlnetwork/ftlnetwork-sdk/store"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
 )
 
 // Keys for parameter access

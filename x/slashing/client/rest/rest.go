@@ -1,9 +1,9 @@
 package rest
 
 import (
-	"github.com/cosmos/cosmos-sdk/client/context"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/crypto/keys"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client/context"
+	"github.com/ftlnetwork/ftlnetwork-sdk/codec"
+	"github.com/ftlnetwork/ftlnetwork-sdk/crypto/keys"
 
 	"github.com/gorilla/mux"
 )

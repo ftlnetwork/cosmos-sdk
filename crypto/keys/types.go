@@ -3,10 +3,10 @@ package keys
 import (
 	"github.com/tendermint/tendermint/crypto"
 
-	ccrypto "github.com/cosmos/cosmos-sdk/crypto"
+	ccrypto "github.com/ftlnetwork/ftlnetwork-sdk/crypto"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/hd"
-	"github.com/cosmos/cosmos-sdk/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/crypto/keys/hd"
+	"github.com/ftlnetwork/ftlnetwork-sdk/types"
 )
 
 // Keybase exposes operations on a generic keystore
@@ -30,7 +30,7 @@ type Keybase interface {
 	// Compute a BIP39 seed from th mnemonic and bip39Passwd.
 	// Derive private key from the seed using the BIP44 params.
 	// Encrypt the key to disk using encryptPasswd.
-	// See https://github.com/cosmos/cosmos-sdk/issues/2095
+	// See https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2095
 	Derive(name, mnemonic, bip39Passwd,
 		encryptPasswd string, params hd.BIP44Params) (Info, error)
 	// Create, store, and return a new Ledger key reference

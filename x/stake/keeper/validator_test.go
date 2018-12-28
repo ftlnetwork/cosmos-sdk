@@ -7,8 +7,8 @@ import (
 
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/stake/types"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/stake/types"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

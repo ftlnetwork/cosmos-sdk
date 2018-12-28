@@ -14,9 +14,9 @@ import (
 	"github.com/tendermint/tendermint/crypto"
 	"github.com/tendermint/tendermint/crypto/ed25519"
 
-	gaia "github.com/cosmos/cosmos-sdk/cmd/gaia/app"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/auth"
+	gaia "github.com/ftlnetwork/ftlnetwork-sdk/cmd/gaia/app"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/auth"
 )
 
 func init() {

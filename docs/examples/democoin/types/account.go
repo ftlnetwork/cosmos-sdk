@@ -1,12 +1,12 @@
 package types
 
 import (
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/auth"
+	"github.com/ftlnetwork/ftlnetwork-sdk/codec"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/auth"
 
-	"github.com/cosmos/cosmos-sdk/docs/examples/democoin/x/cool"
-	"github.com/cosmos/cosmos-sdk/docs/examples/democoin/x/pow"
+	"github.com/ftlnetwork/ftlnetwork-sdk/docs/examples/democoin/x/cool"
+	"github.com/ftlnetwork/ftlnetwork-sdk/docs/examples/democoin/x/pow"
 )
 
 var _ auth.Account = (*AppAccount)(nil)

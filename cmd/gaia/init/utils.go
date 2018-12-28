@@ -14,8 +14,8 @@ import (
 	"github.com/tendermint/tendermint/privval"
 	"github.com/tendermint/tendermint/types"
 
-	"github.com/cosmos/cosmos-sdk/cmd/gaia/app"
-	"github.com/cosmos/cosmos-sdk/codec"
+	"github.com/ftlnetwork/ftlnetwork-sdk/cmd/gaia/app"
+	"github.com/ftlnetwork/ftlnetwork-sdk/codec"
 )
 
 // ExportGenesisFile creates and writes the genesis configuration to disk. An

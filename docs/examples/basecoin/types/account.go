@@ -1,9 +1,9 @@
 package types
 
 import (
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/auth"
+	"github.com/ftlnetwork/ftlnetwork-sdk/codec"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/auth"
 )
 
 var _ auth.Account = (*AppAccount)(nil)

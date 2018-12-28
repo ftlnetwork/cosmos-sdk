@@ -15,20 +15,20 @@ import (
 
 	ctypes "github.com/tendermint/tendermint/rpc/core/types"
 
-	client "github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/tx"
-	"github.com/cosmos/cosmos-sdk/cmd/gaia/app"
+	client "github.com/ftlnetwork/ftlnetwork-sdk/client"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client/tx"
+	"github.com/ftlnetwork/ftlnetwork-sdk/cmd/gaia/app"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/mintkey"
-	tests "github.com/cosmos/cosmos-sdk/tests"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/version"
-	"github.com/cosmos/cosmos-sdk/x/auth"
-	authrest "github.com/cosmos/cosmos-sdk/x/auth/client/rest"
-	"github.com/cosmos/cosmos-sdk/x/gov"
-	"github.com/cosmos/cosmos-sdk/x/slashing"
-	"github.com/cosmos/cosmos-sdk/x/stake"
-	stakeTypes "github.com/cosmos/cosmos-sdk/x/stake/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/crypto/keys/mintkey"
+	tests "github.com/ftlnetwork/ftlnetwork-sdk/tests"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/version"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/auth"
+	authrest "github.com/ftlnetwork/ftlnetwork-sdk/x/auth/client/rest"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/gov"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/slashing"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/stake"
+	stakeTypes "github.com/ftlnetwork/ftlnetwork-sdk/x/stake/types"
 )
 
 const (

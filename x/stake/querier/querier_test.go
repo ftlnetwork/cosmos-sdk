@@ -6,10 +6,10 @@ import (
 	"github.com/stretchr/testify/require"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	keep "github.com/cosmos/cosmos-sdk/x/stake/keeper"
-	"github.com/cosmos/cosmos-sdk/x/stake/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/codec"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
+	keep "github.com/ftlnetwork/ftlnetwork-sdk/x/stake/keeper"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/stake/types"
 )
 
 var (

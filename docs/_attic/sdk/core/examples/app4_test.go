@@ -11,10 +11,10 @@ import (
 	dbm "github.com/tendermint/tendermint/libs/db"
 	"github.com/tendermint/tendermint/libs/log"
 
-	bapp "github.com/cosmos/cosmos-sdk/baseapp"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/auth"
-	"github.com/cosmos/cosmos-sdk/x/bank"
+	bapp "github.com/ftlnetwork/ftlnetwork-sdk/baseapp"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/auth"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/bank"
 )
 
 // Create and return App4 instance

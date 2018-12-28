@@ -11,7 +11,7 @@ import (
 
 	"strings"
 
-	"github.com/cosmos/cosmos-sdk/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/types"
 )
 
 var invalidStrs = []string{

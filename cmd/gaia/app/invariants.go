@@ -6,11 +6,11 @@ import (
 
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	banksim "github.com/cosmos/cosmos-sdk/x/bank/simulation"
-	distrsim "github.com/cosmos/cosmos-sdk/x/distribution/simulation"
-	"github.com/cosmos/cosmos-sdk/x/mock/simulation"
-	stakesim "github.com/cosmos/cosmos-sdk/x/stake/simulation"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
+	banksim "github.com/ftlnetwork/ftlnetwork-sdk/x/bank/simulation"
+	distrsim "github.com/ftlnetwork/ftlnetwork-sdk/x/distribution/simulation"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/mock/simulation"
+	stakesim "github.com/ftlnetwork/ftlnetwork-sdk/x/stake/simulation"
 )
 
 func (app *GaiaApp) runtimeInvariants() []simulation.Invariant {

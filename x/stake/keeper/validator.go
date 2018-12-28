@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"time"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/stake/types"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/stake/types"
 )
 
 // Cache the amino decoding of validators, as it can be the case that repeated slashing calls
@@ -186,7 +186,7 @@ func (k Keeper) RemoveValidator(ctx sdk.Context, address sdk.ValAddress) {
 
 	// if any tokens remain, remove from pool (burning the tokens).
 	// this happens if shares are zero but tokens are not.
-	// TODO: Remove once https://github.com/cosmos/cosmos-sdk/pull/2958 is merged
+	// TODO: Remove once https://github.com/ftlnetwork/ftlnetwork-sdk/pull/2958 is merged
 	pool := k.GetPool(ctx)
 	pool.LooseTokens = pool.LooseTokens.Sub(validator.Tokens)
 	k.SetPool(ctx, pool)

@@ -5,15 +5,15 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/context"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client/context"
 
 	"github.com/gorilla/mux"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 	tmliteProxy "github.com/tendermint/tendermint/lite/proxy"
 
-	"github.com/cosmos/cosmos-sdk/client/utils"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client/utils"
 )
 
 //BlockCommand returns the verified block data for a given heights

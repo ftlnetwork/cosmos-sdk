@@ -5,8 +5,8 @@ import (
 
 	"github.com/tendermint/tendermint/crypto"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/codec"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
 )
 
 // Account is an interface used to store coins at a given address within state.

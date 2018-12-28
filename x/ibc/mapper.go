@@ -3,8 +3,8 @@ package ibc
 import (
 	"fmt"
 
-	codec "github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	codec "github.com/ftlnetwork/ftlnetwork-sdk/codec"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
 )
 
 // IBC Mapper

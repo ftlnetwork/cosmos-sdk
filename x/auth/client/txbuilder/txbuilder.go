@@ -3,10 +3,10 @@ package context
 import (
 	"strings"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/keys"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/auth"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client/keys"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/auth"
 
 	"github.com/pkg/errors"
 	"github.com/spf13/viper"

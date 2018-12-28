@@ -6,14 +6,14 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	"github.com/cosmos/cosmos-sdk/codec"
+	"github.com/ftlnetwork/ftlnetwork-sdk/codec"
 
 	tcmd "github.com/tendermint/tendermint/cmd/tendermint/commands"
 	"github.com/tendermint/tendermint/p2p"
 	pvm "github.com/tendermint/tendermint/privval"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
 )
 
 // ShowNodeIDCmd - ported from Tendermint, dump node ID to stdout

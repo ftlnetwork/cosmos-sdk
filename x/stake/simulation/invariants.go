@@ -4,14 +4,14 @@ import (
 	"bytes"
 	"fmt"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/auth"
-	"github.com/cosmos/cosmos-sdk/x/bank"
-	"github.com/cosmos/cosmos-sdk/x/distribution"
-	"github.com/cosmos/cosmos-sdk/x/mock/simulation"
-	"github.com/cosmos/cosmos-sdk/x/stake"
-	"github.com/cosmos/cosmos-sdk/x/stake/keeper"
-	stakeTypes "github.com/cosmos/cosmos-sdk/x/stake/types"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/auth"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/bank"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/distribution"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/mock/simulation"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/stake"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/stake/keeper"
+	stakeTypes "github.com/ftlnetwork/ftlnetwork-sdk/x/stake/types"
 )
 
 // AllInvariants runs all invariants of the stake module.

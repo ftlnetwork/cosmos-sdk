@@ -2,7 +2,7 @@ PACKAGES_NOSIMULATION=$(shell go list ./... | grep -v '/simulation')
 PACKAGES_SIMTEST=$(shell go list ./... | grep '/simulation')
 VERSION := $(subst v,,$(shell git describe --tags --long))
 BUILD_TAGS = netgo
-BUILD_FLAGS = -tags "${BUILD_TAGS}" -ldflags "-X github.com/cosmos/cosmos-sdk/version.Version=${VERSION}"
+BUILD_FLAGS = -tags "${BUILD_TAGS}" -ldflags "-X github.com/ftlnetwork/ftlnetwork-sdk/version.Version=${VERSION}"
 LEDGER_ENABLED ?= true
 GOTOOLS = \
 	github.com/golang/dep/cmd/dep \
@@ -33,7 +33,7 @@ ifeq ($(LEDGER_ENABLED),true)
   else
     UNAME_S = $(shell uname -s)
     ifeq ($(UNAME_S),OpenBSD)
-      $(warning OpenBSD detected, disabling ledger support (https://github.com/cosmos/cosmos-sdk/issues/1988))
+      $(warning OpenBSD detected, disabling ledger support (https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1988))
     else
       GCC = $(shell command -v gcc 2> /dev/null)
       ifeq ($(GCC),)
@@ -144,7 +144,7 @@ update_vendor_deps: tools
 draw_deps: tools
 	@# requires brew install graphviz or apt-get install graphviz
 	go get github.com/RobotsAndPencils/goviz
-	@goviz -i github.com/cosmos/cosmos-sdk/cmd/gaia/cmd/gaiad -d 2 | dot -Tpng -o dependency-graph.png
+	@goviz -i github.com/ftlnetwork/ftlnetwork-sdk/cmd/gaia/cmd/gaiad -d 2 | dot -Tpng -o dependency-graph.png
 
 clean:
 	rm -f devtools-stamp
@@ -153,7 +153,7 @@ clean:
 ### Documentation
 
 godocs:
-	@echo "--> Wait a few seconds and visit http://localhost:6060/pkg/github.com/cosmos/cosmos-sdk/types"
+	@echo "--> Wait a few seconds and visit http://localhost:6060/pkg/github.com/ftlnetwork/ftlnetwork-sdk/types"
 	godoc -http=:6060
 
 
@@ -163,11 +163,11 @@ godocs:
 test: test_unit
 
 test_cli:
-	@go test -p 4 `go list github.com/cosmos/cosmos-sdk/cmd/gaia/cli_test` -tags=cli_test
+	@go test -p 4 `go list github.com/ftlnetwork/ftlnetwork-sdk/cmd/gaia/cli_test` -tags=cli_test
 
 test_examples:
-	@go test -count 1 -p 1 `go list github.com/cosmos/cosmos-sdk/docs/examples/basecoin/cli_test` -tags=cli_test
-	@go test -count 1 -p 1 `go list github.com/cosmos/cosmos-sdk/docs/examples/democoin/cli_test` -tags=cli_test
+	@go test -count 1 -p 1 `go list github.com/ftlnetwork/ftlnetwork-sdk/docs/examples/basecoin/cli_test` -tags=cli_test
+	@go test -count 1 -p 1 `go list github.com/ftlnetwork/ftlnetwork-sdk/docs/examples/democoin/cli_test` -tags=cli_test
 
 test_unit:
 	@VERSION=$(VERSION) go test $(PACKAGES_NOSIMULATION)
@@ -200,11 +200,11 @@ SIM_BLOCK_SIZE ?= 200
 SIM_COMMIT ?= true
 test_sim_gaia_benchmark:
 	@echo "Running Gaia benchmark for numBlocks=$(SIM_NUM_BLOCKS), blockSize=$(SIM_BLOCK_SIZE). This may take awhile!"
-	@go test -benchmem -run=^$$ github.com/cosmos/cosmos-sdk/cmd/gaia/app -bench ^BenchmarkFullGaiaSimulation$$  -SimulationEnabled=true -SimulationNumBlocks=$(SIM_NUM_BLOCKS) -SimulationBlockSize=$(SIM_BLOCK_SIZE) -SimulationCommit=$(SIM_COMMIT) -timeout 24h
+	@go test -benchmem -run=^$$ github.com/ftlnetwork/ftlnetwork-sdk/cmd/gaia/app -bench ^BenchmarkFullGaiaSimulation$$  -SimulationEnabled=true -SimulationNumBlocks=$(SIM_NUM_BLOCKS) -SimulationBlockSize=$(SIM_BLOCK_SIZE) -SimulationCommit=$(SIM_COMMIT) -timeout 24h
 
 test_sim_gaia_profile:
 	@echo "Running Gaia benchmark for numBlocks=$(SIM_NUM_BLOCKS), blockSize=$(SIM_BLOCK_SIZE). This may take awhile!"
-	@go test -benchmem -run=^$$ github.com/cosmos/cosmos-sdk/cmd/gaia/app -bench ^BenchmarkFullGaiaSimulation$$ -SimulationEnabled=true -SimulationNumBlocks=$(SIM_NUM_BLOCKS) -SimulationBlockSize=$(SIM_BLOCK_SIZE) -SimulationCommit=$(SIM_COMMIT) -timeout 24h -cpuprofile cpu.out -memprofile mem.out
+	@go test -benchmem -run=^$$ github.com/ftlnetwork/ftlnetwork-sdk/cmd/gaia/app -bench ^BenchmarkFullGaiaSimulation$$ -SimulationEnabled=true -SimulationNumBlocks=$(SIM_NUM_BLOCKS) -SimulationBlockSize=$(SIM_BLOCK_SIZE) -SimulationCommit=$(SIM_COMMIT) -timeout 24h -cpuprofile cpu.out -memprofile mem.out
 
 test_cover:
 	@export VERSION=$(VERSION); bash tests/test_cover.sh
@@ -219,7 +219,7 @@ test_lint:
 format:
 	find . -name '*.go' -type f -not -path "./vendor*" -not -path "*.git*" -not -path "./client/lcd/statik/statik.go" | xargs gofmt -w -s
 	find . -name '*.go' -type f -not -path "./vendor*" -not -path "*.git*" -not -path "./client/lcd/statik/statik.go" | xargs misspell -w
-	find . -name '*.go' -type f -not -path "./vendor*" -not -path "*.git*" -not -path "./client/lcd/statik/statik.go" | xargs goimports -w -local github.com/cosmos/cosmos-sdk
+	find . -name '*.go' -type f -not -path "./vendor*" -not -path "*.git*" -not -path "./client/lcd/statik/statik.go" | xargs goimports -w -local github.com/ftlnetwork/ftlnetwork-sdk
 
 benchmark:
 	@go test -bench=. $(PACKAGES_NOSIMULATION)
@@ -231,12 +231,12 @@ benchmark:
 DEVDOC_SAVE = docker commit `docker ps -a -n 1 -q` devdoc:local
 
 devdoc_init:
-	docker run -it -v "$(CURDIR):/go/src/github.com/cosmos/cosmos-sdk" -w "/go/src/github.com/cosmos/cosmos-sdk" tendermint/devdoc echo
+	docker run -it -v "$(CURDIR):/go/src/github.com/ftlnetwork/ftlnetwork-sdk" -w "/go/src/github.com/ftlnetwork/ftlnetwork-sdk" tendermint/devdoc echo
 	# TODO make this safer
 	$(call DEVDOC_SAVE)
 
 devdoc:
-	docker run -it -v "$(CURDIR):/go/src/github.com/cosmos/cosmos-sdk" -w "/go/src/github.com/cosmos/cosmos-sdk" devdoc:local bash
+	docker run -it -v "$(CURDIR):/go/src/github.com/ftlnetwork/ftlnetwork-sdk" -w "/go/src/github.com/ftlnetwork/ftlnetwork-sdk" devdoc:local bash
 
 devdoc_save:
 	# TODO make this safer

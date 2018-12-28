@@ -1,7 +1,7 @@
 package simplestake
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
 )
 
 // simple stake errors reserve 300 ~ 399.

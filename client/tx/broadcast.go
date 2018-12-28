@@ -5,9 +5,9 @@ import (
 
 	"io/ioutil"
 
-	"github.com/cosmos/cosmos-sdk/client/context"
-	"github.com/cosmos/cosmos-sdk/client/utils"
-	"github.com/cosmos/cosmos-sdk/codec"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client/context"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client/utils"
+	"github.com/ftlnetwork/ftlnetwork-sdk/codec"
 )
 
 const (

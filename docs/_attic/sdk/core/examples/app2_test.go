@@ -5,7 +5,7 @@ import (
 
 	"github.com/tendermint/tendermint/crypto/ed25519"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
 
 	"github.com/stretchr/testify/require"
 )

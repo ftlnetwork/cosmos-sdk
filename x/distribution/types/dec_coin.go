@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
 )
 
 // Coins which can have additional decimal points

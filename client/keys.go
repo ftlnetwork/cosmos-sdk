@@ -3,7 +3,7 @@ package client
 import (
 	dbm "github.com/tendermint/tendermint/libs/db"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys"
+	"github.com/ftlnetwork/ftlnetwork-sdk/crypto/keys"
 )
 
 // GetKeyBase initializes a keybase based on the given db.

@@ -9,7 +9,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/cosmos/cosmos-sdk/x/slashing"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/slashing"
 
 	"github.com/tendermint/tendermint/crypto/ed25519"
 	"github.com/tendermint/tendermint/types"
@@ -20,18 +20,18 @@ import (
 	"github.com/tendermint/tendermint/crypto"
 	cmn "github.com/tendermint/tendermint/libs/common"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/keys"
-	"github.com/cosmos/cosmos-sdk/client/tx"
-	"github.com/cosmos/cosmos-sdk/cmd/gaia/app"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/server"
-	"github.com/cosmos/cosmos-sdk/tests"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/auth"
-	"github.com/cosmos/cosmos-sdk/x/gov"
-	"github.com/cosmos/cosmos-sdk/x/stake"
-	stakeTypes "github.com/cosmos/cosmos-sdk/x/stake/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client/keys"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client/tx"
+	"github.com/ftlnetwork/ftlnetwork-sdk/cmd/gaia/app"
+	"github.com/ftlnetwork/ftlnetwork-sdk/codec"
+	"github.com/ftlnetwork/ftlnetwork-sdk/server"
+	"github.com/ftlnetwork/ftlnetwork-sdk/tests"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/auth"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/gov"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/stake"
+	stakeTypes "github.com/ftlnetwork/ftlnetwork-sdk/x/stake/types"
 )
 
 func TestGaiaCLIMinimumFees(t *testing.T) {

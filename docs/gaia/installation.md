@@ -21,12 +21,12 @@ echo "export PATH=$PATH:$GOBIN" >> ~/.bash_profile
 
 Next, let's install the latest version of Gaia. Here we'll use the `master` branch, which contains the latest stable release.
 If necessary, make sure you `git checkout` the correct
-[released version](https://github.com/cosmos/cosmos-sdk/releases).
+[released version](https://github.com/ftlnetwork/ftlnetwork-sdk/releases).
 
 ```bash
 mkdir -p $GOPATH/src/github.com/cosmos
 cd $GOPATH/src/github.com/cosmos
-git clone https://github.com/cosmos/cosmos-sdk
+git clone https://github.com/ftlnetwork/ftlnetwork-sdk
 cd cosmos-sdk && git checkout master
 make tools && make get_vendor_deps && make install
 ```

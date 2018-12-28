@@ -9,10 +9,10 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 	dbm "github.com/tendermint/tendermint/libs/db"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/docs/examples/democoin/mock"
-	"github.com/cosmos/cosmos-sdk/store"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/codec"
+	"github.com/ftlnetwork/ftlnetwork-sdk/docs/examples/democoin/mock"
+	"github.com/ftlnetwork/ftlnetwork-sdk/store"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
 )
 
 func defaultContext(key sdk.StoreKey) sdk.Context {

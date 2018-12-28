@@ -1,10 +1,10 @@
 package distribution
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/distribution/keeper"
-	"github.com/cosmos/cosmos-sdk/x/distribution/tags"
-	"github.com/cosmos/cosmos-sdk/x/distribution/types"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/distribution/keeper"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/distribution/tags"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/distribution/types"
 )
 
 func NewHandler(k keeper.Keeper) sdk.Handler {

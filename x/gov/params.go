@@ -3,7 +3,7 @@ package gov
 import (
 	"time"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
 )
 
 // Param around Deposits for governance

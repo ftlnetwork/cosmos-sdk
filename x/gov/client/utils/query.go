@@ -3,11 +3,11 @@ package utils
 import (
 	"fmt"
 
-	"github.com/cosmos/cosmos-sdk/client/context"
-	"github.com/cosmos/cosmos-sdk/client/tx"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/x/gov"
-	"github.com/cosmos/cosmos-sdk/x/gov/tags"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client/context"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client/tx"
+	"github.com/ftlnetwork/ftlnetwork-sdk/codec"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/gov"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/gov/tags"
 )
 
 // Proposer contains metadata of a governance proposal used for querying a

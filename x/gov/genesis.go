@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	stakeTypes "github.com/cosmos/cosmos-sdk/x/stake/types"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
+	stakeTypes "github.com/ftlnetwork/ftlnetwork-sdk/x/stake/types"
 )
 
 // GenesisState - all staking state that must be provided at genesis
@@ -60,7 +60,7 @@ func DefaultGenesisState() GenesisState {
 	}
 }
 
-// ValidateGenesis TODO https://github.com/cosmos/cosmos-sdk/issues/3007
+// ValidateGenesis TODO https://github.com/ftlnetwork/ftlnetwork-sdk/issues/3007
 func ValidateGenesis(data GenesisState) error {
 	threshold := data.TallyParams.Threshold
 	if threshold.IsNegative() || threshold.GT(sdk.OneDec()) {

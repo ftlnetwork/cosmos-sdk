@@ -10,16 +10,16 @@ import (
 
 	"github.com/tendermint/tendermint/libs/cli"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/cmd/gaia/app"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client"
+	"github.com/ftlnetwork/ftlnetwork-sdk/cmd/gaia/app"
 
 	"github.com/stretchr/testify/require"
 	abciServer "github.com/tendermint/tendermint/abci/server"
 	tcmd "github.com/tendermint/tendermint/cmd/tendermint/commands"
 	"github.com/tendermint/tendermint/libs/log"
 
-	"github.com/cosmos/cosmos-sdk/server"
-	"github.com/cosmos/cosmos-sdk/server/mock"
+	"github.com/ftlnetwork/ftlnetwork-sdk/server"
+	"github.com/ftlnetwork/ftlnetwork-sdk/server/mock"
 
 	"github.com/spf13/viper"
 )

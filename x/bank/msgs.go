@@ -3,7 +3,7 @@ package bank
 import (
 	"encoding/json"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
 )
 
 // name to identify transaction routes

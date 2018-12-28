@@ -4,7 +4,7 @@ import (
 	amino "github.com/tendermint/go-amino"
 	"github.com/tendermint/tendermint/crypto/encoding/amino"
 
-	ccrypto "github.com/cosmos/cosmos-sdk/crypto"
+	ccrypto "github.com/ftlnetwork/ftlnetwork-sdk/crypto"
 )
 
 var cdc = amino.NewCodec()

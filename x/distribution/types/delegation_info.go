@@ -3,7 +3,7 @@ package types
 import (
 	"fmt"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
 )
 
 // distribution info for a delegation - used to determine entitled rewards
@@ -70,7 +70,7 @@ func (di DelegationDistInfo) WithdrawRewards(wc WithdrawContext, vi ValidatorDis
 	// This rounding error may be introduced upon multiplication since
 	// we're clipping decimal digits, and then when we divide by a number ~1 or
 	// < 1, the error doesn't get "buried", and if << 1 it'll get amplified.
-	// more: https://github.com/cosmos/cosmos-sdk/issues/2888#issuecomment-441387987
+	// more: https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2888#issuecomment-441387987
 	for i, decCoin := range withdrawalTokens {
 		poolDenomAmount := vi.DelPool.AmountOf(decCoin.Denom)
 		if decCoin.Amount.GT(poolDenomAmount) {

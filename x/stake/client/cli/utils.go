@@ -3,11 +3,11 @@ package cli
 import (
 	"github.com/pkg/errors"
 
-	"github.com/cosmos/cosmos-sdk/client/context"
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/stake"
-	"github.com/cosmos/cosmos-sdk/x/stake/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client/context"
+	"github.com/ftlnetwork/ftlnetwork-sdk/codec"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/stake"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/stake/types"
 )
 
 func getShares(

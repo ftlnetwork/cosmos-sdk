@@ -8,10 +8,10 @@ import (
 	"github.com/tendermint/tendermint/libs/common"
 	tmtypes "github.com/tendermint/tendermint/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/stake/keeper"
-	"github.com/cosmos/cosmos-sdk/x/stake/tags"
-	"github.com/cosmos/cosmos-sdk/x/stake/types"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/stake/keeper"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/stake/tags"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/stake/types"
 )
 
 func NewHandler(k keeper.Keeper) sdk.Handler {

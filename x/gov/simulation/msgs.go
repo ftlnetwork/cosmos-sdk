@@ -6,12 +6,12 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/gov"
-	"github.com/cosmos/cosmos-sdk/x/mock/simulation"
-	"github.com/cosmos/cosmos-sdk/x/stake"
-	stakeTypes "github.com/cosmos/cosmos-sdk/x/stake/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/baseapp"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/gov"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/mock/simulation"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/stake"
+	stakeTypes "github.com/ftlnetwork/ftlnetwork-sdk/x/stake/types"
 )
 
 const (

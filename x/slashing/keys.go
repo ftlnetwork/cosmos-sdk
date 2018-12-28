@@ -3,8 +3,8 @@ package slashing
 import (
 	"encoding/binary"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	stake "github.com/cosmos/cosmos-sdk/x/stake/types"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
+	stake "github.com/ftlnetwork/ftlnetwork-sdk/x/stake/types"
 )
 
 const (

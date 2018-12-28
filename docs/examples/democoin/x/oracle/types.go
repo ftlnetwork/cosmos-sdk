@@ -3,7 +3,7 @@ package oracle
 import (
 	"encoding/json"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
 )
 
 // Msg - struct for voting on payloads

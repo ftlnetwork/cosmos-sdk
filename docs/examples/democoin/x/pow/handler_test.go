@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
 )
 
 func TestPowHandler(t *testing.T) {
@@ -38,7 +38,7 @@ func TestPowHandler(t *testing.T) {
 	require.Nil(t, err)
 	require.Equal(t, newCount, uint64(1))
 
-	// todo assert correct coin change, awaiting https://github.com/cosmos/cosmos-sdk/pull/691
+	// todo assert correct coin change, awaiting https://github.com/ftlnetwork/ftlnetwork-sdk/pull/691
 
 	difficulty = uint64(4)
 	nonce, proof = mine(addr, count, difficulty)

@@ -10,12 +10,12 @@ import (
 	"github.com/spf13/viper"
 	"github.com/tendermint/go-amino"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/context"
-	"github.com/cosmos/cosmos-sdk/client/utils"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/auth"
-	authtxb "github.com/cosmos/cosmos-sdk/x/auth/client/txbuilder"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client/context"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client/utils"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/auth"
+	authtxb "github.com/ftlnetwork/ftlnetwork-sdk/x/auth/client/txbuilder"
 )
 
 const (

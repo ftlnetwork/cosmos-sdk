@@ -7,7 +7,7 @@ import (
 	"os"
 	"path"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
+	"github.com/ftlnetwork/ftlnetwork-sdk/baseapp"
 
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
@@ -18,17 +18,17 @@ import (
 	dbm "github.com/tendermint/tendermint/libs/db"
 	"github.com/tendermint/tendermint/libs/log"
 
-	bam "github.com/cosmos/cosmos-sdk/baseapp"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	bam "github.com/ftlnetwork/ftlnetwork-sdk/baseapp"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/x/auth"
-	"github.com/cosmos/cosmos-sdk/x/bank"
-	"github.com/cosmos/cosmos-sdk/x/params"
-	"github.com/cosmos/cosmos-sdk/x/slashing"
-	"github.com/cosmos/cosmos-sdk/x/stake"
+	"github.com/ftlnetwork/ftlnetwork-sdk/codec"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/auth"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/bank"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/params"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/slashing"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/stake"
 
-	gaia "github.com/cosmos/cosmos-sdk/cmd/gaia/app"
+	gaia "github.com/ftlnetwork/ftlnetwork-sdk/cmd/gaia/app"
 )
 
 func runHackCmd(cmd *cobra.Command, args []string) error {
@@ -243,7 +243,7 @@ func (app *GaiaApp) initChainer(ctx sdk.Context, req abci.RequestInitChain) abci
 	var genesisState gaia.GenesisState
 	err := app.cdc.UnmarshalJSON(stateJSON, &genesisState)
 	if err != nil {
-		panic(err) // TODO https://github.com/cosmos/cosmos-sdk/issues/468 // return sdk.ErrGenesisParse("").TraceCause(err, "")
+		panic(err) // TODO https://github.com/ftlnetwork/ftlnetwork-sdk/issues/468 // return sdk.ErrGenesisParse("").TraceCause(err, "")
 	}
 
 	// load the accounts
@@ -255,7 +255,7 @@ func (app *GaiaApp) initChainer(ctx sdk.Context, req abci.RequestInitChain) abci
 	// load the initial stake information
 	validators, err := stake.InitGenesis(ctx, app.stakeKeeper, genesisState.StakeData)
 	if err != nil {
-		panic(err) // TODO https://github.com/cosmos/cosmos-sdk/issues/468 // return sdk.ErrGenesisParse("").TraceCause(err, "")
+		panic(err) // TODO https://github.com/ftlnetwork/ftlnetwork-sdk/issues/468 // return sdk.ErrGenesisParse("").TraceCause(err, "")
 	}
 
 	slashing.InitGenesis(ctx, app.slashingKeeper, genesisState.SlashingData, genesisState.StakeData)

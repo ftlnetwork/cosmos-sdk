@@ -1,8 +1,8 @@
 package slashing
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/slashing/tags"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/slashing/tags"
 )
 
 func NewHandler(k Keeper) sdk.Handler {

@@ -84,8 +84,8 @@ In the Cosmos SDK, you can see the application of this principle in the
 package app
 
 import (
-    "github.com/cosmos/cosmos-sdk/x/bank"
-    "github.com/cosmos/cosmos-sdk/x/sketchy"
+    "github.com/ftlnetwork/ftlnetwork-sdk/x/bank"
+    "github.com/ftlnetwork/ftlnetwork-sdk/x/sketchy"
 )
 
 func (app *BasecoinApp) initRouterHandlers() {

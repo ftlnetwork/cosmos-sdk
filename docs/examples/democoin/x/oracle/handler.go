@@ -3,7 +3,7 @@ package oracle
 import (
 	"bytes"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
 )
 
 // Handler handles payload after it passes voting process

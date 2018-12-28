@@ -4,12 +4,12 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/cosmos/cosmos-sdk/client/context"
-	"github.com/cosmos/cosmos-sdk/client/utils"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/keyerror"
-	"github.com/cosmos/cosmos-sdk/x/auth"
-	authtxb "github.com/cosmos/cosmos-sdk/x/auth/client/txbuilder"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client/context"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client/utils"
+	"github.com/ftlnetwork/ftlnetwork-sdk/codec"
+	"github.com/ftlnetwork/ftlnetwork-sdk/crypto/keys/keyerror"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/auth"
+	authtxb "github.com/ftlnetwork/ftlnetwork-sdk/x/auth/client/txbuilder"
 )
 
 // SignBody defines the properties of a sign request's body.

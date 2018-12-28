@@ -10,8 +10,8 @@ import (
 
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/cosmos/cosmos-sdk/store"
-	"github.com/cosmos/cosmos-sdk/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/store"
+	"github.com/ftlnetwork/ftlnetwork-sdk/types"
 )
 
 type MockLogger struct {

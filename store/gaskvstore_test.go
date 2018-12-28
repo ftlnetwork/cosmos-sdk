@@ -6,7 +6,7 @@ import (
 	"github.com/tendermint/iavl"
 	dbm "github.com/tendermint/tendermint/libs/db"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
 
 	"github.com/stretchr/testify/require"
 )

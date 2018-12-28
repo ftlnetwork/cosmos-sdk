@@ -14,10 +14,10 @@ import (
 	"github.com/spf13/viper"
 	"github.com/tendermint/tendermint/libs/cli"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	ccrypto "github.com/cosmos/cosmos-sdk/crypto"
-	"github.com/cosmos/cosmos-sdk/crypto/keys"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/hd"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client"
+	ccrypto "github.com/ftlnetwork/ftlnetwork-sdk/crypto"
+	"github.com/ftlnetwork/ftlnetwork-sdk/crypto/keys"
+	"github.com/ftlnetwork/ftlnetwork-sdk/crypto/keys/hd"
 )
 
 const (

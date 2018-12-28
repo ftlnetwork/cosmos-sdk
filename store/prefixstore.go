@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"io"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
 )
 
 var _ KVStore = prefixStore{}

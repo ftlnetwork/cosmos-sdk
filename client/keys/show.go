@@ -6,7 +6,7 @@ import (
 
 	"github.com/tendermint/tendermint/crypto"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys"
+	"github.com/ftlnetwork/ftlnetwork-sdk/crypto/keys"
 
 	"github.com/gorilla/mux"
 	"github.com/pkg/errors"
@@ -15,8 +15,8 @@ import (
 	"github.com/tendermint/tendermint/crypto/multisig"
 	"github.com/tendermint/tendermint/libs/cli"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/keyerror"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/crypto/keys/keyerror"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
 )
 
 const (

@@ -8,9 +8,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/cmd/gaia/app"
-	"github.com/cosmos/cosmos-sdk/server"
-	"github.com/cosmos/cosmos-sdk/tests"
+	"github.com/ftlnetwork/ftlnetwork-sdk/cmd/gaia/app"
+	"github.com/ftlnetwork/ftlnetwork-sdk/server"
+	"github.com/ftlnetwork/ftlnetwork-sdk/tests"
 )
 
 var (

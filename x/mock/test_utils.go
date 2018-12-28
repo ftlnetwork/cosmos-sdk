@@ -9,8 +9,8 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 	"github.com/tendermint/tendermint/crypto"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/baseapp"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
 )
 
 // BigInterval is a representation of the interval [lo, hi), where

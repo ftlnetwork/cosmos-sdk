@@ -3,7 +3,7 @@ package context
 import (
 	"github.com/pkg/errors"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
 )
 
 // ErrInvalidAccount returns a standardized error reflecting that a given

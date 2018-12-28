@@ -7,14 +7,14 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 	tmtypes "github.com/tendermint/tendermint/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/auth"
-	distr "github.com/cosmos/cosmos-sdk/x/distribution"
-	"github.com/cosmos/cosmos-sdk/x/gov"
-	"github.com/cosmos/cosmos-sdk/x/mint"
-	"github.com/cosmos/cosmos-sdk/x/slashing"
-	stake "github.com/cosmos/cosmos-sdk/x/stake"
+	"github.com/ftlnetwork/ftlnetwork-sdk/codec"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/auth"
+	distr "github.com/ftlnetwork/ftlnetwork-sdk/x/distribution"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/gov"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/mint"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/slashing"
+	stake "github.com/ftlnetwork/ftlnetwork-sdk/x/stake"
 )
 
 // export the state of gaia for a genesis file

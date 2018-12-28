@@ -7,9 +7,9 @@ import (
 	"github.com/spf13/cobra"
 	amino "github.com/tendermint/go-amino"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/context"
-	"github.com/cosmos/cosmos-sdk/x/auth"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client/context"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/auth"
 )
 
 // GetSignCommand returns the sign command

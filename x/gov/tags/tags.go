@@ -1,7 +1,7 @@
 package tags
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
 )
 
 // Governance tags

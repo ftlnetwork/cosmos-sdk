@@ -12,10 +12,10 @@ import (
 	"github.com/spf13/viper"
 	tmtypes "github.com/tendermint/tendermint/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/context"
-	"github.com/cosmos/cosmos-sdk/client/utils"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client/context"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client/utils"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
 )
 
 // TODO these next two functions feel kinda hacky based on their placement

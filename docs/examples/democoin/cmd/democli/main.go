@@ -5,25 +5,25 @@ import (
 
 	"github.com/tendermint/tendermint/libs/cli"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/keys"
-	"github.com/cosmos/cosmos-sdk/client/lcd"
-	"github.com/cosmos/cosmos-sdk/client/rpc"
-	"github.com/cosmos/cosmos-sdk/client/tx"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client/keys"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client/lcd"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client/rpc"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client/tx"
 
-	"github.com/cosmos/cosmos-sdk/version"
-	at "github.com/cosmos/cosmos-sdk/x/auth"
-	authcmd "github.com/cosmos/cosmos-sdk/x/auth/client/cli"
-	auth "github.com/cosmos/cosmos-sdk/x/auth/client/rest"
-	bankcmd "github.com/cosmos/cosmos-sdk/x/bank/client/cli"
-	bank "github.com/cosmos/cosmos-sdk/x/bank/client/rest"
+	"github.com/ftlnetwork/ftlnetwork-sdk/version"
+	at "github.com/ftlnetwork/ftlnetwork-sdk/x/auth"
+	authcmd "github.com/ftlnetwork/ftlnetwork-sdk/x/auth/client/cli"
+	auth "github.com/ftlnetwork/ftlnetwork-sdk/x/auth/client/rest"
+	bankcmd "github.com/ftlnetwork/ftlnetwork-sdk/x/bank/client/cli"
+	bank "github.com/ftlnetwork/ftlnetwork-sdk/x/bank/client/rest"
 
-	"github.com/cosmos/cosmos-sdk/docs/examples/democoin/app"
-	coolcmd "github.com/cosmos/cosmos-sdk/docs/examples/democoin/x/cool/client/cli"
-	powcmd "github.com/cosmos/cosmos-sdk/docs/examples/democoin/x/pow/client/cli"
-	simplestakingcmd "github.com/cosmos/cosmos-sdk/docs/examples/democoin/x/simplestake/client/cli"
+	"github.com/ftlnetwork/ftlnetwork-sdk/docs/examples/democoin/app"
+	coolcmd "github.com/ftlnetwork/ftlnetwork-sdk/docs/examples/democoin/x/cool/client/cli"
+	powcmd "github.com/ftlnetwork/ftlnetwork-sdk/docs/examples/democoin/x/pow/client/cli"
+	simplestakingcmd "github.com/ftlnetwork/ftlnetwork-sdk/docs/examples/democoin/x/simplestake/client/cli"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
 )
 
 // rootCmd is the entry point for this binary

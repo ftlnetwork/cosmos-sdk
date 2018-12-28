@@ -1,9 +1,9 @@
 package oracle
 
 import (
-	"github.com/cosmos/cosmos-sdk/codec"
+	"github.com/ftlnetwork/ftlnetwork-sdk/codec"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
 )
 
 // Keeper of the oracle store

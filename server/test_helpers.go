@@ -7,7 +7,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client"
 
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/require"

@@ -5,10 +5,10 @@
 BREAKING CHANGES
 
 * Gaia
-  * [\#3148](https://github.com/cosmos/cosmos-sdk/issues/3148) Fix `gaiad export` by adding a boolean to `NewGaiaApp` determining whether or not to load the latest version
+  * [\#3148](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/3148) Fix `gaiad export` by adding a boolean to `NewGaiaApp` determining whether or not to load the latest version
 
 * SDK
-  * [\#3163](https://github.com/cosmos/cosmos-sdk/issues/3163) Withdraw commission on self bond removal
+  * [\#3163](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/3163) Withdraw commission on self bond removal
 
 
 ## 0.28.1
@@ -16,35 +16,35 @@ BREAKING CHANGES
 BREAKING CHANGES
 
 * Gaia REST API (`gaiacli advanced rest-server`)
-  * [lcd] [\#3045](https://github.com/cosmos/cosmos-sdk/pull/3045) Fix quoted json return on GET /keys (keys list)
-  * [gaia-lite] [\#2191](https://github.com/cosmos/cosmos-sdk/issues/2191) Split `POST /stake/delegators/{delegatorAddr}/delegations` into `POST /stake/delegators/{delegatorAddr}/delegations`, `POST /stake/delegators/{delegatorAddr}/unbonding_delegations` and `POST /stake/delegators/{delegatorAddr}/redelegations`
-  * [gaia-lite] [\#3056](https://github.com/cosmos/cosmos-sdk/pull/3056) `generate_only` and `simulate` have moved from query arguments to POST requests body.
+  * [lcd] [\#3045](https://github.com/ftlnetwork/ftlnetwork-sdk/pull/3045) Fix quoted json return on GET /keys (keys list)
+  * [gaia-lite] [\#2191](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2191) Split `POST /stake/delegators/{delegatorAddr}/delegations` into `POST /stake/delegators/{delegatorAddr}/delegations`, `POST /stake/delegators/{delegatorAddr}/unbonding_delegations` and `POST /stake/delegators/{delegatorAddr}/redelegations`
+  * [gaia-lite] [\#3056](https://github.com/ftlnetwork/ftlnetwork-sdk/pull/3056) `generate_only` and `simulate` have moved from query arguments to POST requests body.
 * Tendermint
   * [tendermint] Now using Tendermint 0.27.3
 
 FEATURES
 
 * Gaia REST API (`gaiacli advanced rest-server`)
-  * [slashing] [\#2399](https://github.com/cosmos/cosmos-sdk/issues/2399)  Implement `/slashing/parameters` endpoint to query slashing parameters.
+  * [slashing] [\#2399](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2399)  Implement `/slashing/parameters` endpoint to query slashing parameters.
 * Gaia CLI  (`gaiacli`)
-  * [gaiacli] [\#2399](https://github.com/cosmos/cosmos-sdk/issues/2399) Implement `params` command to query slashing parameters.
+  * [gaiacli] [\#2399](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2399) Implement `params` command to query slashing parameters.
 * SDK
-  - [client] [\#2926](https://github.com/cosmos/cosmos-sdk/issues/2926) Add TxEncoder to client TxBuilder.
+  - [client] [\#2926](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2926) Add TxEncoder to client TxBuilder.
 * Other
   - Introduced the logjack tool for saving logs w/ rotation
 
 IMPROVEMENTS
 
 * Gaia REST API (`gaiacli advanced rest-server`)
-  * [\#2879](https://github.com/cosmos/cosmos-sdk/issues/2879), [\#2880](https://github.com/cosmos/cosmos-sdk/issues/2880) Update deposit and vote endpoints to perform a direct txs query
+  * [\#2879](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2879), [\#2880](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2880) Update deposit and vote endpoints to perform a direct txs query
     when a given proposal is inactive and thus having votes and deposits removed
     from state.
 * Gaia CLI  (`gaiacli`)
-  * [\#2879](https://github.com/cosmos/cosmos-sdk/issues/2879), [\#2880](https://github.com/cosmos/cosmos-sdk/issues/2880) Update deposit and vote CLI commands to perform a direct txs query
+  * [\#2879](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2879), [\#2880](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2880) Update deposit and vote CLI commands to perform a direct txs query
     when a given proposal is inactive and thus having votes and deposits removed
     from state.
 * Gaia
-  * [\#3021](https://github.com/cosmos/cosmos-sdk/pull/3021) Add `--gentx-dir` to `gaiad collect-gentxs` to specify a directory from which collect and load gentxs. Add `--output-document` to `gaiad init` to allow one to redirect output to file.
+  * [\#3021](https://github.com/ftlnetwork/ftlnetwork-sdk/pull/3021) Add `--gentx-dir` to `gaiad collect-gentxs` to specify a directory from which collect and load gentxs. Add `--output-document` to `gaiad init` to allow one to redirect output to file.
 
 
 ## 0.28.0
@@ -52,54 +52,54 @@ IMPROVEMENTS
 BREAKING CHANGES
 
 * Gaia CLI  (`gaiacli`)
-  * [cli] [\#2595](https://github.com/cosmos/cosmos-sdk/issues/2595) Remove `keys new` in favor of `keys add` incorporating existing functionality with addition of key recovery functionality.
-  * [cli] [\#2987](https://github.com/cosmos/cosmos-sdk/pull/2987) Add shorthand `-a` to `gaiacli keys show` and update docs
-  * [cli] [\#2971](https://github.com/cosmos/cosmos-sdk/pull/2971) Additional verification when running `gaiad gentx`
-  * [cli] [\#2734](https://github.com/cosmos/cosmos-sdk/issues/2734) Rewrite `gaiacli config`. It is now a non-interactive config utility.
+  * [cli] [\#2595](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2595) Remove `keys new` in favor of `keys add` incorporating existing functionality with addition of key recovery functionality.
+  * [cli] [\#2987](https://github.com/ftlnetwork/ftlnetwork-sdk/pull/2987) Add shorthand `-a` to `gaiacli keys show` and update docs
+  * [cli] [\#2971](https://github.com/ftlnetwork/ftlnetwork-sdk/pull/2971) Additional verification when running `gaiad gentx`
+  * [cli] [\#2734](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2734) Rewrite `gaiacli config`. It is now a non-interactive config utility.
 
 * Gaia
   * [#128](https://github.com/tendermint/devops/issues/128) Updated CircleCI job to trigger website build on every push to master/develop.
-  * [\#2994](https://github.com/cosmos/cosmos-sdk/pull/2994) Change wrong-password error message.
-  * [\#3009](https://github.com/cosmos/cosmos-sdk/issues/3009) Added missing Gaia genesis verification
+  * [\#2994](https://github.com/ftlnetwork/ftlnetwork-sdk/pull/2994) Change wrong-password error message.
+  * [\#3009](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/3009) Added missing Gaia genesis verification
   * [#128](https://github.com/tendermint/devops/issues/128) Updated CircleCI job to trigger website build on every push to master/develop.
-  * [\#2994](https://github.com/cosmos/cosmos-sdk/pull/2994) Change wrong-password error message.
-  * [\#3009](https://github.com/cosmos/cosmos-sdk/issues/3009) Added missing Gaia genesis verification
-  * [gas] [\#3052](https://github.com/cosmos/cosmos-sdk/issues/3052) Updated gas costs to more reasonable numbers
+  * [\#2994](https://github.com/ftlnetwork/ftlnetwork-sdk/pull/2994) Change wrong-password error message.
+  * [\#3009](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/3009) Added missing Gaia genesis verification
+  * [gas] [\#3052](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/3052) Updated gas costs to more reasonable numbers
 
 * SDK
-  * [auth] [\#2952](https://github.com/cosmos/cosmos-sdk/issues/2952) Signatures are no longer serialized on chain with the account number and sequence number
-  * [auth] [\#2952](https://github.com/cosmos/cosmos-sdk/issues/2952) Signatures are no longer serialized on chain with the account number and sequence number
-  * [stake] [\#3055](https://github.com/cosmos/cosmos-sdk/issues/3055) Use address instead of bond height / intratxcounter for deduplication
+  * [auth] [\#2952](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2952) Signatures are no longer serialized on chain with the account number and sequence number
+  * [auth] [\#2952](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2952) Signatures are no longer serialized on chain with the account number and sequence number
+  * [stake] [\#3055](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/3055) Use address instead of bond height / intratxcounter for deduplication
 
 FEATURES
 
 * Gaia CLI  (`gaiacli`)
-  * [\#2961](https://github.com/cosmos/cosmos-sdk/issues/2961) Add --force flag to gaiacli keys delete command to skip passphrase check and force key deletion unconditionally.
+  * [\#2961](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2961) Add --force flag to gaiacli keys delete command to skip passphrase check and force key deletion unconditionally.
 
 IMPROVEMENTS
 
 * Gaia CLI  (`gaiacli`)
-  * [\#2991](https://github.com/cosmos/cosmos-sdk/issues/2991) Fully validate transaction signatures during `gaiacli tx sign --validate-signatures`
+  * [\#2991](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2991) Fully validate transaction signatures during `gaiacli tx sign --validate-signatures`
 
 * SDK
-  * [\#1277](https://github.com/cosmos/cosmos-sdk/issues/1277) Complete bank module specification
-  * [\#2963](https://github.com/cosmos/cosmos-sdk/issues/2963) Complete auth module specification
-  * [\#2914](https://github.com/cosmos/cosmos-sdk/issues/2914) No longer withdraw validator rewards on bond/unbond, but rather move
+  * [\#1277](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1277) Complete bank module specification
+  * [\#2963](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2963) Complete auth module specification
+  * [\#2914](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2914) No longer withdraw validator rewards on bond/unbond, but rather move
   the rewards to the respective validator's pools.
 
 
 BUG FIXES
 
 * Gaia CLI  (`gaiacli`)
-  * [\#2921](https://github.com/cosmos/cosmos-sdk/issues/2921) Fix `keys delete` inability to delete offline and ledger keys.
+  * [\#2921](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2921) Fix `keys delete` inability to delete offline and ledger keys.
 
 * Gaia
-  * [\#3003](https://github.com/cosmos/cosmos-sdk/issues/3003) CollectStdTxs() must validate DelegatorAddr against genesis accounts.
+  * [\#3003](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/3003) CollectStdTxs() must validate DelegatorAddr against genesis accounts.
 
 * SDK
-  * [\#2967](https://github.com/cosmos/cosmos-sdk/issues/2967) Change ordering of `mint.BeginBlocker` and `distr.BeginBlocker`, recalculate inflation each block
-  * [\#3068](https://github.com/cosmos/cosmos-sdk/issues/3068) check for uint64 gas overflow during `Std#ValidateBasic`.
-  * [\#3071](https://github.com/cosmos/cosmos-sdk/issues/3071) Catch overflow on block gas meter
+  * [\#2967](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2967) Change ordering of `mint.BeginBlocker` and `distr.BeginBlocker`, recalculate inflation each block
+  * [\#3068](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/3068) check for uint64 gas overflow during `Std#ValidateBasic`.
+  * [\#3071](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/3071) Catch overflow on block gas meter
 
 
 ## 0.27.0
@@ -107,27 +107,27 @@ BUG FIXES
 BREAKING CHANGES
 
 * Gaia REST API (`gaiacli advanced rest-server`)
-  * [gaia-lite] [\#2819](https://github.com/cosmos/cosmos-sdk/pull/2819) Txs query param format is now: `/txs?tag=value` (removed '' wrapping the query parameter `value`)
+  * [gaia-lite] [\#2819](https://github.com/ftlnetwork/ftlnetwork-sdk/pull/2819) Txs query param format is now: `/txs?tag=value` (removed '' wrapping the query parameter `value`)
 
 * Gaia CLI  (`gaiacli`)
-  * [cli] [\#2728](https://github.com/cosmos/cosmos-sdk/pull/2728) Seperate `tx` and `query` subcommands by module
-  * [cli] [\#2727](https://github.com/cosmos/cosmos-sdk/pull/2727) Fix unbonding command flow
-  * [cli] [\#2786](https://github.com/cosmos/cosmos-sdk/pull/2786) Fix redelegation command flow
-  * [cli] [\#2829](https://github.com/cosmos/cosmos-sdk/pull/2829) add-genesis-account command now validates state when adding accounts
-  * [cli] [\#2804](https://github.com/cosmos/cosmos-sdk/issues/2804) Check whether key exists before passing it on to `tx create-validator`.
-  * [cli] [\#2874](https://github.com/cosmos/cosmos-sdk/pull/2874) `gaiacli tx sign` takes an optional `--output-document` flag to support output redirection.
-  * [cli] [\#2875](https://github.com/cosmos/cosmos-sdk/pull/2875) Refactor `gaiad gentx` and avoid redirection to `gaiacli tx sign` for tx signing.
+  * [cli] [\#2728](https://github.com/ftlnetwork/ftlnetwork-sdk/pull/2728) Seperate `tx` and `query` subcommands by module
+  * [cli] [\#2727](https://github.com/ftlnetwork/ftlnetwork-sdk/pull/2727) Fix unbonding command flow
+  * [cli] [\#2786](https://github.com/ftlnetwork/ftlnetwork-sdk/pull/2786) Fix redelegation command flow
+  * [cli] [\#2829](https://github.com/ftlnetwork/ftlnetwork-sdk/pull/2829) add-genesis-account command now validates state when adding accounts
+  * [cli] [\#2804](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2804) Check whether key exists before passing it on to `tx create-validator`.
+  * [cli] [\#2874](https://github.com/ftlnetwork/ftlnetwork-sdk/pull/2874) `gaiacli tx sign` takes an optional `--output-document` flag to support output redirection.
+  * [cli] [\#2875](https://github.com/ftlnetwork/ftlnetwork-sdk/pull/2875) Refactor `gaiad gentx` and avoid redirection to `gaiacli tx sign` for tx signing.
 
 * Gaia
   * [mint] [\#2825] minting now occurs every block, inflation parameter updates still hourly
 
 * SDK
-  * [\#2752](https://github.com/cosmos/cosmos-sdk/pull/2752) Don't hardcode bondable denom.
-  * [\#2701](https://github.com/cosmos/cosmos-sdk/issues/2701) Account numbers and sequence numbers in `auth` are now `uint64` instead of `int64`
-  * [\#2019](https://github.com/cosmos/cosmos-sdk/issues/2019) Cap total number of signatures. Current per-transaction limit is 7, and if that is exceeded transaction is rejected.
-  * [\#2801](https://github.com/cosmos/cosmos-sdk/pull/2801) Remove AppInit structure.
-  * [\#2798](https://github.com/cosmos/cosmos-sdk/issues/2798) Governance API has miss-spelled English word in JSON response ('depositer' -> 'depositor')
-  * [\#2943](https://github.com/cosmos/cosmos-sdk/pull/2943) Transaction action tags equal the message type. Stake EndBlocker tags are included.
+  * [\#2752](https://github.com/ftlnetwork/ftlnetwork-sdk/pull/2752) Don't hardcode bondable denom.
+  * [\#2701](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2701) Account numbers and sequence numbers in `auth` are now `uint64` instead of `int64`
+  * [\#2019](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2019) Cap total number of signatures. Current per-transaction limit is 7, and if that is exceeded transaction is rejected.
+  * [\#2801](https://github.com/ftlnetwork/ftlnetwork-sdk/pull/2801) Remove AppInit structure.
+  * [\#2798](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2798) Governance API has miss-spelled English word in JSON response ('depositer' -> 'depositor')
+  * [\#2943](https://github.com/ftlnetwork/ftlnetwork-sdk/pull/2943) Transaction action tags equal the message type. Stake EndBlocker tags are included.
 
 * Tendermint
   * Update to Tendermint 0.27.0
@@ -135,76 +135,76 @@ BREAKING CHANGES
 FEATURES
 
 * Gaia REST API (`gaiacli advanced rest-server`)
-  * [gov] [\#2479](https://github.com/cosmos/cosmos-sdk/issues/2479) Added governance parameter
+  * [gov] [\#2479](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2479) Added governance parameter
     query REST endpoints.
 
 * Gaia CLI  (`gaiacli`)
-  * [gov][cli] [\#2479](https://github.com/cosmos/cosmos-sdk/issues/2479) Added governance
+  * [gov][cli] [\#2479](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2479) Added governance
     parameter query commands.
   * [stake][cli] [\#2027] Add CLI query command for getting all delegations to a specific validator.
-  * [\#2840](https://github.com/cosmos/cosmos-sdk/pull/2840) Standardize CLI exports from modules
+  * [\#2840](https://github.com/ftlnetwork/ftlnetwork-sdk/pull/2840) Standardize CLI exports from modules
 
 * Gaia
-  * [app] [\#2791](https://github.com/cosmos/cosmos-sdk/issues/2791) Support export at a specific height, with `gaiad export --height=HEIGHT`.
-  * [x/gov] [#2479](https://github.com/cosmos/cosmos-sdk/issues/2479) Implemented querier
+  * [app] [\#2791](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2791) Support export at a specific height, with `gaiad export --height=HEIGHT`.
+  * [x/gov] [#2479](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2479) Implemented querier
   for getting governance parameters.
-  * [app] [\#2663](https://github.com/cosmos/cosmos-sdk/issues/2663) - Runtime-assertable invariants
-  * [app] [\#2791](https://github.com/cosmos/cosmos-sdk/issues/2791) Support export at a specific height, with `gaiad export --height=HEIGHT`.
-  * [app] [\#2812](https://github.com/cosmos/cosmos-sdk/issues/2812) Support export alterations to prepare for restarting at zero-height
+  * [app] [\#2663](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2663) - Runtime-assertable invariants
+  * [app] [\#2791](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2791) Support export at a specific height, with `gaiad export --height=HEIGHT`.
+  * [app] [\#2812](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2812) Support export alterations to prepare for restarting at zero-height
 
 * SDK
-  * [simulator] [\#2682](https://github.com/cosmos/cosmos-sdk/issues/2682) MsgEditValidator now looks at the validator's max rate, thus it now succeeds a significant portion of the time
-  * [core] [\#2775](https://github.com/cosmos/cosmos-sdk/issues/2775) Add deliverTx maximum block gas limit
+  * [simulator] [\#2682](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2682) MsgEditValidator now looks at the validator's max rate, thus it now succeeds a significant portion of the time
+  * [core] [\#2775](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2775) Add deliverTx maximum block gas limit
 
 
 IMPROVEMENTS
 
 * Gaia REST API (`gaiacli advanced rest-server`)
-  * [gaia-lite] [\#2819](https://github.com/cosmos/cosmos-sdk/pull/2819) Tx search now supports multiple tags as query parameters
-  * [\#2836](https://github.com/cosmos/cosmos-sdk/pull/2836) Expose LCD router to allow users to register routes there.
+  * [gaia-lite] [\#2819](https://github.com/ftlnetwork/ftlnetwork-sdk/pull/2819) Tx search now supports multiple tags as query parameters
+  * [\#2836](https://github.com/ftlnetwork/ftlnetwork-sdk/pull/2836) Expose LCD router to allow users to register routes there.
 
 * Gaia CLI  (`gaiacli`)
-  * [\#2749](https://github.com/cosmos/cosmos-sdk/pull/2749) Add --chain-id flag to gaiad testnet
-  * [\#2819](https://github.com/cosmos/cosmos-sdk/pull/2819) Tx search now supports multiple tags as query parameters
+  * [\#2749](https://github.com/ftlnetwork/ftlnetwork-sdk/pull/2749) Add --chain-id flag to gaiad testnet
+  * [\#2819](https://github.com/ftlnetwork/ftlnetwork-sdk/pull/2819) Tx search now supports multiple tags as query parameters
 
 * Gaia
-  * [\#2772](https://github.com/cosmos/cosmos-sdk/issues/2772) Update BaseApp to not persist state when the ante handler fails on DeliverTx.
-  * [\#2773](https://github.com/cosmos/cosmos-sdk/issues/2773) Require moniker to be provided on `gaiad init`.
-  * [\#2672](https://github.com/cosmos/cosmos-sdk/issues/2672) [Makefile] Updated for better Windows compatibility and ledger support logic, get_tools was rewritten as a cross-compatible Makefile.
-  * [\#2766](https://github.com/cosmos/cosmos-sdk/issues/2766) [Makefile] Added goimports tool to get_tools. Get_tools now only builds new versions if binaries are missing.
+  * [\#2772](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2772) Update BaseApp to not persist state when the ante handler fails on DeliverTx.
+  * [\#2773](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2773) Require moniker to be provided on `gaiad init`.
+  * [\#2672](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2672) [Makefile] Updated for better Windows compatibility and ledger support logic, get_tools was rewritten as a cross-compatible Makefile.
+  * [\#2766](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2766) [Makefile] Added goimports tool to get_tools. Get_tools now only builds new versions if binaries are missing.
   * [#110](https://github.com/tendermint/devops/issues/110) Updated CircleCI job to trigger website build when cosmos docs are updated.
 
 * SDK
  & [x/mock/simulation] [\#2720] major cleanup, introduction of helper objects, reorganization
- * [\#2821](https://github.com/cosmos/cosmos-sdk/issues/2821) Codespaces are now strings
- * [types] [\#2776](https://github.com/cosmos/cosmos-sdk/issues/2776) Improve safety of `Coin` and `Coins` types. Various functions
+ * [\#2821](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2821) Codespaces are now strings
+ * [types] [\#2776](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2776) Improve safety of `Coin` and `Coins` types. Various functions
  and methods will panic when a negative amount is discovered.
- * [\#2815](https://github.com/cosmos/cosmos-sdk/issues/2815) Gas unit fields changed from `int64` to `uint64`.
- * [\#2821](https://github.com/cosmos/cosmos-sdk/issues/2821) Codespaces are now strings
- * [\#2779](https://github.com/cosmos/cosmos-sdk/issues/2779) Introduce `ValidateBasic` to the `Tx` interface and call it in the ante
+ * [\#2815](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2815) Gas unit fields changed from `int64` to `uint64`.
+ * [\#2821](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2821) Codespaces are now strings
+ * [\#2779](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2779) Introduce `ValidateBasic` to the `Tx` interface and call it in the ante
  handler.
- * [\#2825](https://github.com/cosmos/cosmos-sdk/issues/2825) More staking and distribution invariants
- * [\#2912](https://github.com/cosmos/cosmos-sdk/issues/2912) Print commit ID in hex when commit is synced.
+ * [\#2825](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2825) More staking and distribution invariants
+ * [\#2912](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2912) Print commit ID in hex when commit is synced.
 
 * Tendermint
- * [\#2796](https://github.com/cosmos/cosmos-sdk/issues/2796) Update to go-amino 0.14.1
+ * [\#2796](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2796) Update to go-amino 0.14.1
 
 
 BUG FIXES
 
 * Gaia REST API (`gaiacli advanced rest-server`)
-  * [gaia-lite] [\#2868](https://github.com/cosmos/cosmos-sdk/issues/2868) Added handler for governance tally endpoint
-  * [\#2907](https://github.com/cosmos/cosmos-sdk/issues/2907) Refactor and fix the way Gaia Lite is started.
+  * [gaia-lite] [\#2868](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2868) Added handler for governance tally endpoint
+  * [\#2907](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2907) Refactor and fix the way Gaia Lite is started.
 
 * Gaia
   * [\#2723] Use `cosmosvalcons` Bech32 prefix in `tendermint show-address`
-  * [\#2742](https://github.com/cosmos/cosmos-sdk/issues/2742) Fix time format of TimeoutCommit override
-  * [\#2898](https://github.com/cosmos/cosmos-sdk/issues/2898) Remove redundant '$' in docker-compose.yml
+  * [\#2742](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2742) Fix time format of TimeoutCommit override
+  * [\#2898](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2898) Remove redundant '$' in docker-compose.yml
 
 * SDK
-  * [\#2733](https://github.com/cosmos/cosmos-sdk/issues/2733) [x/gov, x/mock/simulation] Fix governance simulation, update x/gov import/export
-  * [\#2854](https://github.com/cosmos/cosmos-sdk/issues/2854) [x/bank] Remove unused bank.MsgIssue, prevent possible panic
-  * [\#2884](https://github.com/cosmos/cosmos-sdk/issues/2884) [docs/examples] Fix `basecli version` panic
+  * [\#2733](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2733) [x/gov, x/mock/simulation] Fix governance simulation, update x/gov import/export
+  * [\#2854](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2854) [x/bank] Remove unused bank.MsgIssue, prevent possible panic
+  * [\#2884](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2884) [docs/examples] Fix `basecli version` panic
 
 * Tendermint
   * [\#2797](https://github.com/tendermint/tendermint/pull/2797) AddressBook requires addresses to have IDs; Do not crap out immediately after sending pex addrs in seed mode
@@ -214,10 +214,10 @@ BUG FIXES
 BREAKING CHANGES
 
 * Gaia
-  * [gaiad init] [\#2602](https://github.com/cosmos/cosmos-sdk/issues/2602) New genesis workflow
+  * [gaiad init] [\#2602](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2602) New genesis workflow
 
 * SDK
-  * [simulation] [\#2665](https://github.com/cosmos/cosmos-sdk/issues/2665) only argument to simulation.Invariant is now app
+  * [simulation] [\#2665](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2665) only argument to simulation.Invariant is now app
 
 * Tendermint
   * Upgrade to version 0.26.0
@@ -225,45 +225,45 @@ BREAKING CHANGES
 FEATURES
 
 * Gaia CLI  (`gaiacli`)
-  * [cli] [\#2569](https://github.com/cosmos/cosmos-sdk/pull/2569) Add commands to query validator unbondings and redelegations
-  * [cli] [\#2569](https://github.com/cosmos/cosmos-sdk/pull/2569) Add commands to query validator unbondings and redelegations
-  * [cli] [\#2524](https://github.com/cosmos/cosmos-sdk/issues/2524) Add support offline mode to `gaiacli tx sign`. Lookups are not performed if the flag `--offline` is on.
-  * [cli] [\#2558](https://github.com/cosmos/cosmos-sdk/issues/2558) Rename --print-sigs to --validate-signatures. It now performs a complete set of sanity checks and reports to the user. Also added --print-signature-only to print the signature only, not the whole transaction.
-  * [cli] [\#2704](https://github.com/cosmos/cosmos-sdk/pull/2704) New add-genesis-account convenience command to populate genesis.json with genesis accounts.
+  * [cli] [\#2569](https://github.com/ftlnetwork/ftlnetwork-sdk/pull/2569) Add commands to query validator unbondings and redelegations
+  * [cli] [\#2569](https://github.com/ftlnetwork/ftlnetwork-sdk/pull/2569) Add commands to query validator unbondings and redelegations
+  * [cli] [\#2524](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2524) Add support offline mode to `gaiacli tx sign`. Lookups are not performed if the flag `--offline` is on.
+  * [cli] [\#2558](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2558) Rename --print-sigs to --validate-signatures. It now performs a complete set of sanity checks and reports to the user. Also added --print-signature-only to print the signature only, not the whole transaction.
+  * [cli] [\#2704](https://github.com/ftlnetwork/ftlnetwork-sdk/pull/2704) New add-genesis-account convenience command to populate genesis.json with genesis accounts.
 
 * SDK
-  * [\#1336](https://github.com/cosmos/cosmos-sdk/issues/1336) Mechanism for SDK Users to configure their own Bech32 prefixes instead of using the default cosmos prefixes.
+  * [\#1336](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1336) Mechanism for SDK Users to configure their own Bech32 prefixes instead of using the default cosmos prefixes.
 
 IMPROVEMENTS
 
 * Gaia
- * [\#2637](https://github.com/cosmos/cosmos-sdk/issues/2637) [x/gov] Switched inactive and active proposal queues to an iterator based queue
+ * [\#2637](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2637) [x/gov] Switched inactive and active proposal queues to an iterator based queue
 
 * SDK
- * [\#2573](https://github.com/cosmos/cosmos-sdk/issues/2573) [x/distribution] add accum invariance
- * [\#2556](https://github.com/cosmos/cosmos-sdk/issues/2556) [x/mock/simulation] Fix debugging output
- * [\#2396](https://github.com/cosmos/cosmos-sdk/issues/2396) [x/mock/simulation] Change parameters to get more slashes
- * [\#2617](https://github.com/cosmos/cosmos-sdk/issues/2617) [x/mock/simulation] Randomize all genesis parameters
- * [\#2669](https://github.com/cosmos/cosmos-sdk/issues/2669) [x/stake] Added invarant check to make sure validator's power aligns with its spot in the power store.
- * [\#1924](https://github.com/cosmos/cosmos-sdk/issues/1924) [x/mock/simulation] Use a transition matrix for block size
- * [\#2660](https://github.com/cosmos/cosmos-sdk/issues/2660) [x/mock/simulation] Staking transactions get tested far more frequently
- * [\#2610](https://github.com/cosmos/cosmos-sdk/issues/2610) [x/stake] Block redelegation to and from the same validator
- * [\#2652](https://github.com/cosmos/cosmos-sdk/issues/2652) [x/auth] Add benchmark for get and set account
- * [\#2685](https://github.com/cosmos/cosmos-sdk/issues/2685) [store] Add general merkle absence proof (also for empty substores)
- * [\#2708](https://github.com/cosmos/cosmos-sdk/issues/2708) [store] Disallow setting nil values
+ * [\#2573](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2573) [x/distribution] add accum invariance
+ * [\#2556](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2556) [x/mock/simulation] Fix debugging output
+ * [\#2396](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2396) [x/mock/simulation] Change parameters to get more slashes
+ * [\#2617](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2617) [x/mock/simulation] Randomize all genesis parameters
+ * [\#2669](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2669) [x/stake] Added invarant check to make sure validator's power aligns with its spot in the power store.
+ * [\#1924](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1924) [x/mock/simulation] Use a transition matrix for block size
+ * [\#2660](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2660) [x/mock/simulation] Staking transactions get tested far more frequently
+ * [\#2610](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2610) [x/stake] Block redelegation to and from the same validator
+ * [\#2652](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2652) [x/auth] Add benchmark for get and set account
+ * [\#2685](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2685) [store] Add general merkle absence proof (also for empty substores)
+ * [\#2708](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2708) [store] Disallow setting nil values
 
 BUG FIXES
 
 * Gaia
- * [\#2670](https://github.com/cosmos/cosmos-sdk/issues/2670) [x/stake] fixed incorrect `IterateBondedValidators` and split into two functions: `IterateBondedValidators` and `IterateLastBlockConsValidators`
- * [\#2691](https://github.com/cosmos/cosmos-sdk/issues/2691) Fix local testnet creation by using a single canonical genesis time
- * [\#2648](https://github.com/cosmos/cosmos-sdk/issues/2648) [gaiad] Fix `gaiad export` / `gaiad import` consistency, test in CI
+ * [\#2670](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2670) [x/stake] fixed incorrect `IterateBondedValidators` and split into two functions: `IterateBondedValidators` and `IterateLastBlockConsValidators`
+ * [\#2691](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2691) Fix local testnet creation by using a single canonical genesis time
+ * [\#2648](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2648) [gaiad] Fix `gaiad export` / `gaiad import` consistency, test in CI
 
 * SDK
- * [\#2625](https://github.com/cosmos/cosmos-sdk/issues/2625) [x/gov] fix AppendTag function usage error
- * [\#2677](https://github.com/cosmos/cosmos-sdk/issues/2677) [x/stake, x/distribution] various staking/distribution fixes as found by the simulator
- * [\#2674](https://github.com/cosmos/cosmos-sdk/issues/2674) [types] Fix coin.IsLT() impl, coins.IsLT() impl, and renamed coins.Is\* to coins.IsAll\* (see [\#2686](https://github.com/cosmos/cosmos-sdk/issues/2686))
- * [\#2711](https://github.com/cosmos/cosmos-sdk/issues/2711) [x/stake] Add commission data to `MsgCreateValidator` signature bytes.
+ * [\#2625](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2625) [x/gov] fix AppendTag function usage error
+ * [\#2677](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2677) [x/stake, x/distribution] various staking/distribution fixes as found by the simulator
+ * [\#2674](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2674) [types] Fix coin.IsLT() impl, coins.IsLT() impl, and renamed coins.Is\* to coins.IsAll\* (see [\#2686](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2686))
+ * [\#2711](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2711) [x/stake] Add commission data to `MsgCreateValidator` signature bytes.
  * Temporarily disable insecure mode for Gaia Lite
 
 ## 0.25.0
@@ -274,50 +274,50 @@ BREAKING CHANGES
 
 * Gaia REST API (`gaiacli advanced rest-server`)
     * [x/stake] Validator.Owner renamed to Validator.Operator
-    * [\#595](https://github.com/cosmos/cosmos-sdk/issues/595) Connections to the REST server are now secured using Transport Layer Security by default. The --insecure flag is provided to switch back to insecure HTTP.
-    * [gaia-lite] [\#2258](https://github.com/cosmos/cosmos-sdk/issues/2258) Split `GET stake/delegators/{delegatorAddr}` into `GET stake/delegators/{delegatorAddr}/delegations`, `GET stake/delegators/{delegatorAddr}/unbonding_delegations` and `GET stake/delegators/{delegatorAddr}/redelegations`
+    * [\#595](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/595) Connections to the REST server are now secured using Transport Layer Security by default. The --insecure flag is provided to switch back to insecure HTTP.
+    * [gaia-lite] [\#2258](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2258) Split `GET stake/delegators/{delegatorAddr}` into `GET stake/delegators/{delegatorAddr}/delegations`, `GET stake/delegators/{delegatorAddr}/unbonding_delegations` and `GET stake/delegators/{delegatorAddr}/redelegations`
 
 * Gaia CLI  (`gaiacli`)
     * [x/stake] Validator.Owner renamed to Validator.Operator
     * [cli] unsafe_reset_all, show_validator, and show_node_id have been renamed to unsafe-reset-all, show-validator, and show-node-id
-    * [cli] [\#1983](https://github.com/cosmos/cosmos-sdk/issues/1983) --print-response now defaults to true in commands that create and send a transaction
-    * [cli] [\#1983](https://github.com/cosmos/cosmos-sdk/issues/1983) you can now pass --pubkey or --address to gaiacli keys show to return a plaintext representation of the key's address or public key for use with other commands
-    * [cli] [\#2061](https://github.com/cosmos/cosmos-sdk/issues/2061) changed proposalID in governance REST endpoints to proposal-id
-    * [cli] [\#2014](https://github.com/cosmos/cosmos-sdk/issues/2014) `gaiacli advanced` no longer exists - to access `ibc`, `rest-server`, and `validator-set` commands use `gaiacli ibc`, `gaiacli rest-server`, and `gaiacli tendermint`, respectively
-    * [makefile] `get_vendor_deps` no longer updates lock file it just updates vendor directory. Use `update_vendor_deps` to update the lock file. [#2152](https://github.com/cosmos/cosmos-sdk/pull/2152)
-    * [cli] [\#2221](https://github.com/cosmos/cosmos-sdk/issues/2221) All commands that
+    * [cli] [\#1983](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1983) --print-response now defaults to true in commands that create and send a transaction
+    * [cli] [\#1983](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1983) you can now pass --pubkey or --address to gaiacli keys show to return a plaintext representation of the key's address or public key for use with other commands
+    * [cli] [\#2061](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2061) changed proposalID in governance REST endpoints to proposal-id
+    * [cli] [\#2014](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2014) `gaiacli advanced` no longer exists - to access `ibc`, `rest-server`, and `validator-set` commands use `gaiacli ibc`, `gaiacli rest-server`, and `gaiacli tendermint`, respectively
+    * [makefile] `get_vendor_deps` no longer updates lock file it just updates vendor directory. Use `update_vendor_deps` to update the lock file. [#2152](https://github.com/ftlnetwork/ftlnetwork-sdk/pull/2152)
+    * [cli] [\#2221](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2221) All commands that
     utilize a validator's operator address must now use the new Bech32 prefix,
     `cosmosvaloper`.
-    * [cli] [\#2190](https://github.com/cosmos/cosmos-sdk/issues/2190) `gaiacli init --gen-txs` is now `gaiacli init --with-txs` to reduce confusion
-    * [cli] [\#2073](https://github.com/cosmos/cosmos-sdk/issues/2073) --from can now be either an address or a key name
-    * [cli] [\#1184](https://github.com/cosmos/cosmos-sdk/issues/1184) Subcommands reorganisation, see [\#2390](https://github.com/cosmos/cosmos-sdk/pull/2390) for a comprehensive list of changes.
-    * [cli] [\#2524](https://github.com/cosmos/cosmos-sdk/issues/2524) Add support offline mode to `gaiacli tx sign`. Lookups are not performed if the flag `--offline` is on.
-    * [cli] [\#2570](https://github.com/cosmos/cosmos-sdk/pull/2570) Add commands to query deposits on proposals
+    * [cli] [\#2190](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2190) `gaiacli init --gen-txs` is now `gaiacli init --with-txs` to reduce confusion
+    * [cli] [\#2073](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2073) --from can now be either an address or a key name
+    * [cli] [\#1184](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1184) Subcommands reorganisation, see [\#2390](https://github.com/ftlnetwork/ftlnetwork-sdk/pull/2390) for a comprehensive list of changes.
+    * [cli] [\#2524](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2524) Add support offline mode to `gaiacli tx sign`. Lookups are not performed if the flag `--offline` is on.
+    * [cli] [\#2570](https://github.com/ftlnetwork/ftlnetwork-sdk/pull/2570) Add commands to query deposits on proposals
 
 * Gaia
-    * Make the transient store key use a distinct store key. [#2013](https://github.com/cosmos/cosmos-sdk/pull/2013)
-    * [x/stake] [\#1901](https://github.com/cosmos/cosmos-sdk/issues/1901) Validator type's Owner field renamed to Operator; Validator's GetOwner() renamed accordingly to comply with the SDK's Validator interface.
-    * [docs] [#2001](https://github.com/cosmos/cosmos-sdk/pull/2001) Update slashing spec for slashing period
-    * [x/stake, x/slashing] [#1305](https://github.com/cosmos/cosmos-sdk/issues/1305) - Rename "revoked" to "jailed"
+    * Make the transient store key use a distinct store key. [#2013](https://github.com/ftlnetwork/ftlnetwork-sdk/pull/2013)
+    * [x/stake] [\#1901](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1901) Validator type's Owner field renamed to Operator; Validator's GetOwner() renamed accordingly to comply with the SDK's Validator interface.
+    * [docs] [#2001](https://github.com/ftlnetwork/ftlnetwork-sdk/pull/2001) Update slashing spec for slashing period
+    * [x/stake, x/slashing] [#1305](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1305) - Rename "revoked" to "jailed"
     * [x/stake] [#1676] Revoked and jailed validators put into the unbonding state
     * [x/stake] [#1877] Redelegations/unbonding-delegation from unbonding validator have reduced time
-    * [x/slashing] [\#1789](https://github.com/cosmos/cosmos-sdk/issues/1789) Slashing changes for Tendermint validator set offset (NextValSet)
-    * [x/stake] [\#2040](https://github.com/cosmos/cosmos-sdk/issues/2040) Validator
+    * [x/slashing] [\#1789](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1789) Slashing changes for Tendermint validator set offset (NextValSet)
+    * [x/stake] [\#2040](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2040) Validator
     operator type has now changed to `sdk.ValAddress`
-    * [x/stake] [\#2221](https://github.com/cosmos/cosmos-sdk/issues/2221) New
+    * [x/stake] [\#2221](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2221) New
     Bech32 prefixes have been introduced for a validator's consensus address and
     public key: `cosmosvalcons` and `cosmosvalconspub` respectively. Also, existing Bech32 prefixes have been
     renamed for accounts and validator operators:
       * `cosmosaccaddr` / `cosmosaccpub` => `cosmos` / `cosmospub`
       * `cosmosvaladdr` / `cosmosvalpub` => `cosmosvaloper` / `cosmosvaloperpub`
     * [x/stake] [#1013] TendermintUpdates now uses transient store
-    * [x/stake] [\#2435](https://github.com/cosmos/cosmos-sdk/issues/2435) Remove empty bytes from the ValidatorPowerRank store key
-    * [x/gov] [\#2195](https://github.com/cosmos/cosmos-sdk/issues/2195) Governance uses BFT Time
-    * [x/gov] [\#2256](https://github.com/cosmos/cosmos-sdk/issues/2256) Removed slashing for governance non-voting validators
-    * [simulation] [\#2162](https://github.com/cosmos/cosmos-sdk/issues/2162) Added back correct supply invariants
-    * [x/slashing] [\#2430](https://github.com/cosmos/cosmos-sdk/issues/2430) Simulate more slashes, check if validator is jailed before jailing
-    * [x/stake] [\#2393](https://github.com/cosmos/cosmos-sdk/issues/2393) Removed `CompleteUnbonding` and `CompleteRedelegation` Msg types, and instead added unbonding/redelegation queues to endblocker
-    * [x/mock/simulation] [\#2501](https://github.com/cosmos/cosmos-sdk/issues/2501) Simulate transactions & invariants for fee distribution, and fix bugs discovered in the process
+    * [x/stake] [\#2435](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2435) Remove empty bytes from the ValidatorPowerRank store key
+    * [x/gov] [\#2195](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2195) Governance uses BFT Time
+    * [x/gov] [\#2256](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2256) Removed slashing for governance non-voting validators
+    * [simulation] [\#2162](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2162) Added back correct supply invariants
+    * [x/slashing] [\#2430](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2430) Simulate more slashes, check if validator is jailed before jailing
+    * [x/stake] [\#2393](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2393) Removed `CompleteUnbonding` and `CompleteRedelegation` Msg types, and instead added unbonding/redelegation queues to endblocker
+    * [x/mock/simulation] [\#2501](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2501) Simulate transactions & invariants for fee distribution, and fix bugs discovered in the process
       * [x/auth] Simulate random fee payments
       * [cmd/gaia/app] Simulate non-zero inflation
       * [x/stake] Call hooks correctly in several cases related to delegation/validator updates
@@ -335,8 +335,8 @@ BREAKING CHANGES
       * [x/distribution] Correctly calculate total power using Tendermint updates
       * [x/distribution] Simulate withdrawal transactions
       * [x/distribution] Fix a bug where the fee pool was not correctly tracked on WithdrawDelegatorRewardsAll
-    * [x/stake] [\#1673](https://github.com/cosmos/cosmos-sdk/issues/1673) Validators are no longer deleted until they can no longer possibly be slashed
-    * [\#1890](https://github.com/cosmos/cosmos-sdk/issues/1890) Start chain with initial state + sequence of transactions
+    * [x/stake] [\#1673](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1673) Validators are no longer deleted until they can no longer possibly be slashed
+    * [\#1890](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1890) Start chain with initial state + sequence of transactions
       * [cli] Rename `gaiad init gentx` to `gaiad gentx`.
       * [cli] Add `--skip-genesis` flag to `gaiad init` to prevent `genesis.json` generation.
       * Drop `GenesisTx` in favor of a signed `StdTx` with only one `MsgCreateValidator` message.
@@ -344,39 +344,39 @@ BREAKING CHANGES
       * [cli] Add `--moniker` flag to `gaiad init` to override moniker when generating `genesis.json` - i.e. it takes effect when running with the `--with-txs` flag, it is ignored otherwise.
 
 * SDK
-    * [core] [\#2219](https://github.com/cosmos/cosmos-sdk/issues/2219) Update to Tendermint 0.24.0
+    * [core] [\#2219](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2219) Update to Tendermint 0.24.0
       * Validator set updates delayed by one block
       * BFT timestamp that can safely be used by applications
       * Fixed maximum block size enforcement
-    * [core] [\#1807](https://github.com/cosmos/cosmos-sdk/issues/1807) Switch from use of rational to decimal
-    * [types] [\#1901](https://github.com/cosmos/cosmos-sdk/issues/1901) Validator interface's GetOwner() renamed to GetOperator()
-    * [x/slashing] [#2122](https://github.com/cosmos/cosmos-sdk/pull/2122) - Implement slashing period
-    * [types] [\#2119](https://github.com/cosmos/cosmos-sdk/issues/2119) Parsed error messages and ABCI log errors to make     them more human readable.
-    * [types] [\#2407](https://github.com/cosmos/cosmos-sdk/issues/2407) MulInt method added to big decimal in order to improve efficiency of slashing
-    * [simulation] Rename TestAndRunTx to Operation [#2153](https://github.com/cosmos/cosmos-sdk/pull/2153)
-    * [simulation] Remove log and testing.TB from Operation and Invariants, in favor of using errors [\#2282](https://github.com/cosmos/cosmos-sdk/issues/2282)
-    * [simulation] Remove usage of keys and addrs in the types, in favor of simulation.Account [\#2384](https://github.com/cosmos/cosmos-sdk/issues/2384)
-    * [tools] Removed gocyclo [#2211](https://github.com/cosmos/cosmos-sdk/issues/2211)
-    * [baseapp] Remove `SetTxDecoder` in favor of requiring the decoder be set in baseapp initialization. [#1441](https://github.com/cosmos/cosmos-sdk/issues/1441)
-    * [baseapp] [\#1921](https://github.com/cosmos/cosmos-sdk/issues/1921) Add minimumFees field to BaseApp.
-    * [store] Change storeInfo within the root multistore to use tmhash instead of ripemd160 [\#2308](https://github.com/cosmos/cosmos-sdk/issues/2308)
-    * [codec] [\#2324](https://github.com/cosmos/cosmos-sdk/issues/2324) All referrences to wire have been renamed to codec. Additionally, wire.NewCodec is now codec.New().
-    * [types] [\#2343](https://github.com/cosmos/cosmos-sdk/issues/2343) Make sdk.Msg have a names field, to facilitate automatic tagging.
-    * [baseapp] [\#2366](https://github.com/cosmos/cosmos-sdk/issues/2366) Automatically add action tags to all messages
-    * [x/auth] [\#2377](https://github.com/cosmos/cosmos-sdk/issues/2377) auth.StdSignMsg -> txbuilder.StdSignMsg
-    * [x/staking] [\#2244](https://github.com/cosmos/cosmos-sdk/issues/2244) staking now holds a consensus-address-index instead of a consensus-pubkey-index
-    * [x/staking] [\#2236](https://github.com/cosmos/cosmos-sdk/issues/2236) more distribution hooks for distribution
-    * [x/stake] [\#2394](https://github.com/cosmos/cosmos-sdk/issues/2394) Split up UpdateValidator into distinct state transitions applied only in EndBlock
-    * [x/slashing] [\#2480](https://github.com/cosmos/cosmos-sdk/issues/2480) Fix signing info handling bugs & faulty slashing
-    * [x/stake] [\#2412](https://github.com/cosmos/cosmos-sdk/issues/2412) Added an unbonding validator queue to EndBlock to automatically update validator.Status when finished Unbonding
-    * [x/stake] [\#2500](https://github.com/cosmos/cosmos-sdk/issues/2500) Block conflicting redelegations until we add an index
+    * [core] [\#1807](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1807) Switch from use of rational to decimal
+    * [types] [\#1901](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1901) Validator interface's GetOwner() renamed to GetOperator()
+    * [x/slashing] [#2122](https://github.com/ftlnetwork/ftlnetwork-sdk/pull/2122) - Implement slashing period
+    * [types] [\#2119](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2119) Parsed error messages and ABCI log errors to make     them more human readable.
+    * [types] [\#2407](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2407) MulInt method added to big decimal in order to improve efficiency of slashing
+    * [simulation] Rename TestAndRunTx to Operation [#2153](https://github.com/ftlnetwork/ftlnetwork-sdk/pull/2153)
+    * [simulation] Remove log and testing.TB from Operation and Invariants, in favor of using errors [\#2282](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2282)
+    * [simulation] Remove usage of keys and addrs in the types, in favor of simulation.Account [\#2384](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2384)
+    * [tools] Removed gocyclo [#2211](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2211)
+    * [baseapp] Remove `SetTxDecoder` in favor of requiring the decoder be set in baseapp initialization. [#1441](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1441)
+    * [baseapp] [\#1921](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1921) Add minimumFees field to BaseApp.
+    * [store] Change storeInfo within the root multistore to use tmhash instead of ripemd160 [\#2308](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2308)
+    * [codec] [\#2324](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2324) All referrences to wire have been renamed to codec. Additionally, wire.NewCodec is now codec.New().
+    * [types] [\#2343](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2343) Make sdk.Msg have a names field, to facilitate automatic tagging.
+    * [baseapp] [\#2366](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2366) Automatically add action tags to all messages
+    * [x/auth] [\#2377](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2377) auth.StdSignMsg -> txbuilder.StdSignMsg
+    * [x/staking] [\#2244](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2244) staking now holds a consensus-address-index instead of a consensus-pubkey-index
+    * [x/staking] [\#2236](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2236) more distribution hooks for distribution
+    * [x/stake] [\#2394](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2394) Split up UpdateValidator into distinct state transitions applied only in EndBlock
+    * [x/slashing] [\#2480](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2480) Fix signing info handling bugs & faulty slashing
+    * [x/stake] [\#2412](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2412) Added an unbonding validator queue to EndBlock to automatically update validator.Status when finished Unbonding
+    * [x/stake] [\#2500](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2500) Block conflicting redelegations until we add an index
     * [x/params] Global Paramstore refactored
-    * [types] [\#2506](https://github.com/cosmos/cosmos-sdk/issues/2506) sdk.Dec MarshalJSON now marshals as a normal Decimal, with 10 digits of decimal precision
-    * [x/stake] [\#2508](https://github.com/cosmos/cosmos-sdk/issues/2508) Utilize Tendermint power for validator power key
-    * [x/stake] [\#2531](https://github.com/cosmos/cosmos-sdk/issues/2531) Remove all inflation logic
-    * [x/mint] [\#2531](https://github.com/cosmos/cosmos-sdk/issues/2531) Add minting module and inflation logic
-    * [x/auth] [\#2540](https://github.com/cosmos/cosmos-sdk/issues/2540) Rename `AccountMapper` to `AccountKeeper`.
-    * [types] [\#2456](https://github.com/cosmos/cosmos-sdk/issues/2456) Renamed msg.Name() and msg.Type() to msg.Type() and msg.Route() respectively
+    * [types] [\#2506](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2506) sdk.Dec MarshalJSON now marshals as a normal Decimal, with 10 digits of decimal precision
+    * [x/stake] [\#2508](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2508) Utilize Tendermint power for validator power key
+    * [x/stake] [\#2531](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2531) Remove all inflation logic
+    * [x/mint] [\#2531](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2531) Add minting module and inflation logic
+    * [x/auth] [\#2540](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2540) Rename `AccountMapper` to `AccountKeeper`.
+    * [types] [\#2456](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2456) Renamed msg.Name() and msg.Type() to msg.Type() and msg.Route() respectively
 
 * Tendermint
   * Update tendermint version from v0.23.0 to v0.25.0, notable changes
@@ -394,47 +394,47 @@ FEATURES
 
 * Gaia REST API (`gaiacli advanced rest-server`)
   * [gaia-lite] Endpoints to query staking pool and params
-  * [gaia-lite] [\#2110](https://github.com/cosmos/cosmos-sdk/issues/2110) Add support for `simulate=true` requests query argument to endpoints that send txs to run simulations of transactions
-  * [gaia-lite] [\#966](https://github.com/cosmos/cosmos-sdk/issues/966) Add support for `generate_only=true` query argument to generate offline unsigned transactions
-  * [gaia-lite] [\#1953](https://github.com/cosmos/cosmos-sdk/issues/1953) Add /sign endpoint to sign transactions generated with `generate_only=true`.
-  * [gaia-lite] [\#1954](https://github.com/cosmos/cosmos-sdk/issues/1954) Add /broadcast endpoint to broadcast transactions signed by the /sign endpoint.
-  * [gaia-lite] [\#2113](https://github.com/cosmos/cosmos-sdk/issues/2113) Rename `/accounts/{address}/send` to `/bank/accounts/{address}/transfers`, rename `/accounts/{address}` to `/auth/accounts/{address}`, replace `proposal-id` with `proposalId` in all gov endpoints
-  * [gaia-lite] [\#2478](https://github.com/cosmos/cosmos-sdk/issues/2478) Add query gov proposal's deposits endpoint
-  * [gaia-lite] [\#2477](https://github.com/cosmos/cosmos-sdk/issues/2477) Add query validator's outgoing redelegations and unbonding delegations endpoints
+  * [gaia-lite] [\#2110](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2110) Add support for `simulate=true` requests query argument to endpoints that send txs to run simulations of transactions
+  * [gaia-lite] [\#966](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/966) Add support for `generate_only=true` query argument to generate offline unsigned transactions
+  * [gaia-lite] [\#1953](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1953) Add /sign endpoint to sign transactions generated with `generate_only=true`.
+  * [gaia-lite] [\#1954](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1954) Add /broadcast endpoint to broadcast transactions signed by the /sign endpoint.
+  * [gaia-lite] [\#2113](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2113) Rename `/accounts/{address}/send` to `/bank/accounts/{address}/transfers`, rename `/accounts/{address}` to `/auth/accounts/{address}`, replace `proposal-id` with `proposalId` in all gov endpoints
+  * [gaia-lite] [\#2478](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2478) Add query gov proposal's deposits endpoint
+  * [gaia-lite] [\#2477](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2477) Add query validator's outgoing redelegations and unbonding delegations endpoints
 
 * Gaia CLI  (`gaiacli`)
   * [cli] Cmds to query staking pool and params
-  * [gov][cli] [\#2062](https://github.com/cosmos/cosmos-sdk/issues/2062) added `--proposal` flag to `submit-proposal` that allows a JSON file containing a proposal to be passed in
-  * [\#2040](https://github.com/cosmos/cosmos-sdk/issues/2040) Add `--bech` to `gaiacli keys show` and respective REST endpoint to
+  * [gov][cli] [\#2062](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2062) added `--proposal` flag to `submit-proposal` that allows a JSON file containing a proposal to be passed in
+  * [\#2040](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2040) Add `--bech` to `gaiacli keys show` and respective REST endpoint to
   provide desired Bech32 prefix encoding
-  * [cli] [\#2047](https://github.com/cosmos/cosmos-sdk/issues/2047) [\#2306](https://github.com/cosmos/cosmos-sdk/pull/2306) Passing --gas=simulate triggers a simulation of the tx before the actual execution.
+  * [cli] [\#2047](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2047) [\#2306](https://github.com/ftlnetwork/ftlnetwork-sdk/pull/2306) Passing --gas=simulate triggers a simulation of the tx before the actual execution.
   The gas estimate obtained via the simulation will be used as gas limit in the actual execution.
-  * [cli] [\#2047](https://github.com/cosmos/cosmos-sdk/issues/2047) The --gas-adjustment flag can be used to adjust the estimate obtained via the simulation triggered by --gas=simulate.
-  * [cli] [\#2110](https://github.com/cosmos/cosmos-sdk/issues/2110) Add --dry-run flag to perform a simulation of a transaction without broadcasting it. The --gas flag is ignored as gas would be automatically estimated.
-  * [cli] [\#2204](https://github.com/cosmos/cosmos-sdk/issues/2204) Support generating and broadcasting messages with multiple signatures via command line:
-    * [\#966](https://github.com/cosmos/cosmos-sdk/issues/966) Add --generate-only flag to build an unsigned transaction and write it to STDOUT.
-    * [\#1953](https://github.com/cosmos/cosmos-sdk/issues/1953) New `sign` command to sign transactions generated with the --generate-only flag.
-    * [\#1954](https://github.com/cosmos/cosmos-sdk/issues/1954) New `broadcast` command to broadcast transactions generated offline and signed with the `sign` command.
-  * [cli] [\#2220](https://github.com/cosmos/cosmos-sdk/issues/2220) Add `gaiacli config` feature to interactively create CLI config files to reduce the number of required flags
-  * [stake][cli] [\#1672](https://github.com/cosmos/cosmos-sdk/issues/1672) Introduced
+  * [cli] [\#2047](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2047) The --gas-adjustment flag can be used to adjust the estimate obtained via the simulation triggered by --gas=simulate.
+  * [cli] [\#2110](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2110) Add --dry-run flag to perform a simulation of a transaction without broadcasting it. The --gas flag is ignored as gas would be automatically estimated.
+  * [cli] [\#2204](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2204) Support generating and broadcasting messages with multiple signatures via command line:
+    * [\#966](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/966) Add --generate-only flag to build an unsigned transaction and write it to STDOUT.
+    * [\#1953](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1953) New `sign` command to sign transactions generated with the --generate-only flag.
+    * [\#1954](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1954) New `broadcast` command to broadcast transactions generated offline and signed with the `sign` command.
+  * [cli] [\#2220](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2220) Add `gaiacli config` feature to interactively create CLI config files to reduce the number of required flags
+  * [stake][cli] [\#1672](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1672) Introduced
   new commission flags for validator commands `create-validator` and `edit-validator`.
-  * [stake][cli] [\#1890](https://github.com/cosmos/cosmos-sdk/issues/1890) Add `--genesis-format` flag to `gaiacli tx create-validator` to produce transactions in genesis-friendly format.
-  * [cli][\#2554](https://github.com/cosmos/cosmos-sdk/issues/2554) Make `gaiacli keys show` multisig ready.
+  * [stake][cli] [\#1890](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1890) Add `--genesis-format` flag to `gaiacli tx create-validator` to produce transactions in genesis-friendly format.
+  * [cli][\#2554](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2554) Make `gaiacli keys show` multisig ready.
 
 * Gaia
-  * [cli] [\#2170](https://github.com/cosmos/cosmos-sdk/issues/2170) added ability to show the node's address via `gaiad tendermint show-address`
-  * [simulation] [\#2313](https://github.com/cosmos/cosmos-sdk/issues/2313) Reworked `make test_sim_gaia_slow` to `make test_sim_gaia_full`, now simulates from multiple starting seeds in parallel
-  * [cli] [\#1921] (https://github.com/cosmos/cosmos-sdk/issues/1921)
+  * [cli] [\#2170](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2170) added ability to show the node's address via `gaiad tendermint show-address`
+  * [simulation] [\#2313](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2313) Reworked `make test_sim_gaia_slow` to `make test_sim_gaia_full`, now simulates from multiple starting seeds in parallel
+  * [cli] [\#1921] (https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1921)
     * New configuration file `gaiad.toml` is now created to host Gaia-specific configuration.
     * New --minimum_fees/minimum_fees flag/config option to set a minimum fee.
 
 * SDK
   * [querier] added custom querier functionality, so ABCI query requests can be handled by keepers
-  * [simulation] [\#1924](https://github.com/cosmos/cosmos-sdk/issues/1924) allow operations to specify future operations
-  * [simulation] [\#1924](https://github.com/cosmos/cosmos-sdk/issues/1924) Add benchmarking capabilities, with makefile commands "test_sim_gaia_benchmark, test_sim_gaia_profile"
-  * [simulation] [\#2349](https://github.com/cosmos/cosmos-sdk/issues/2349) Add time-based future scheduled operations to simulator
-  * [x/auth] [\#2376](https://github.com/cosmos/cosmos-sdk/issues/2376) Remove FeePayer() from StdTx
-  * [x/stake] [\#1672](https://github.com/cosmos/cosmos-sdk/issues/1672) Implement
+  * [simulation] [\#1924](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1924) allow operations to specify future operations
+  * [simulation] [\#1924](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1924) Add benchmarking capabilities, with makefile commands "test_sim_gaia_benchmark, test_sim_gaia_profile"
+  * [simulation] [\#2349](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2349) Add time-based future scheduled operations to simulator
+  * [x/auth] [\#2376](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2376) Remove FeePayer() from StdTx
+  * [x/stake] [\#1672](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1672) Implement
   basis for the validator commission model.
   * [x/auth] Support account removal in the account mapper.
 
@@ -444,72 +444,72 @@ IMPROVEMENTS
 * [tools] Added ansible script to enable process core dumps
 
 * Gaia REST API (`gaiacli advanced rest-server`)
-    * [x/stake] [\#2000](https://github.com/cosmos/cosmos-sdk/issues/2000) Added tests for new staking endpoints
-    * [gaia-lite] [\#2445](https://github.com/cosmos/cosmos-sdk/issues/2445) Standarized REST error responses
+    * [x/stake] [\#2000](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2000) Added tests for new staking endpoints
+    * [gaia-lite] [\#2445](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2445) Standarized REST error responses
     * [gaia-lite] Added example to Swagger specification for /keys/seed.
     * [x/stake] Refactor REST utils
 
 * Gaia CLI  (`gaiacli`)
-    * [cli] [\#2060](https://github.com/cosmos/cosmos-sdk/issues/2060) removed `--select` from `block` command
-    * [cli] [\#2128](https://github.com/cosmos/cosmos-sdk/issues/2128) fixed segfault when exporting directly after `gaiad init`
-    * [cli] [\#1255](https://github.com/cosmos/cosmos-sdk/issues/1255) open KeyBase in read-only mode
+    * [cli] [\#2060](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2060) removed `--select` from `block` command
+    * [cli] [\#2128](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2128) fixed segfault when exporting directly after `gaiad init`
+    * [cli] [\#1255](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1255) open KeyBase in read-only mode
      for query-purpose CLI commands
     * [docs] Added commands for querying governance deposits, votes and tally
 
 * Gaia
-    * [x/stake] [#2023](https://github.com/cosmos/cosmos-sdk/pull/2023) Terminate iteration loop in `UpdateBondedValidators` and `UpdateBondedValidatorsFull` when the first revoked validator is encountered and perform a sanity check.
+    * [x/stake] [#2023](https://github.com/ftlnetwork/ftlnetwork-sdk/pull/2023) Terminate iteration loop in `UpdateBondedValidators` and `UpdateBondedValidatorsFull` when the first revoked validator is encountered and perform a sanity check.
     * [x/auth] Signature verification's gas cost now accounts for pubkey type. [#2046](https://github.com/tendermint/tendermint/pull/2046)
-    * [x/stake] [x/slashing] Ensure delegation invariants to jailed validators [#1883](https://github.com/cosmos/cosmos-sdk/issues/1883).
+    * [x/stake] [x/slashing] Ensure delegation invariants to jailed validators [#1883](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1883).
     * [x/stake] Improve speed of GetValidator, which was shown to be a performance bottleneck. [#2046](https://github.com/tendermint/tendermint/pull/2200)
-    * [x/stake] [\#2435](https://github.com/cosmos/cosmos-sdk/issues/2435) Improve memory efficiency of getting the various store keys
-    * [genesis] [\#2229](https://github.com/cosmos/cosmos-sdk/issues/2229) Ensure that there are no duplicate accounts or validators in the genesis state.
-    * [genesis] [\#2450](https://github.com/cosmos/cosmos-sdk/issues/2450) Validate staking genesis parameters.
-    * Add SDK validation to `config.toml` (namely disabling `create_empty_blocks`) [\#1571](https://github.com/cosmos/cosmos-sdk/issues/1571)
-    * [\#1941](https://github.com/cosmos/cosmos-sdk/issues/1941)(https://github.com/cosmos/cosmos-sdk/issues/1941) Version is now inferred via `git describe --tags`.
-    * [x/distribution] [\#1671](https://github.com/cosmos/cosmos-sdk/issues/1671) add distribution types and tests
+    * [x/stake] [\#2435](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2435) Improve memory efficiency of getting the various store keys
+    * [genesis] [\#2229](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2229) Ensure that there are no duplicate accounts or validators in the genesis state.
+    * [genesis] [\#2450](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2450) Validate staking genesis parameters.
+    * Add SDK validation to `config.toml` (namely disabling `create_empty_blocks`) [\#1571](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1571)
+    * [\#1941](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1941)(https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1941) Version is now inferred via `git describe --tags`.
+    * [x/distribution] [\#1671](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1671) add distribution types and tests
 
 * SDK
     * [tools] Make get_vendor_deps deletes `.vendor-new` directories, in case scratch files are present.
     * [spec] Added simple piggy bank distribution spec
-    * [cli] [\#1632](https://github.com/cosmos/cosmos-sdk/issues/1632) Add integration tests to ensure `basecoind init && basecoind` start sequences run successfully for both `democoin` and `basecoin` examples.
-    * [store] Speedup IAVL iteration, and consequently everything that requires IAVL iteration. [#2143](https://github.com/cosmos/cosmos-sdk/issues/2143)
-    * [store] [\#1952](https://github.com/cosmos/cosmos-sdk/issues/1952), [\#2281](https://github.com/cosmos/cosmos-sdk/issues/2281) Update IAVL dependency to v0.11.0
-    * [simulation] Make timestamps randomized [#2153](https://github.com/cosmos/cosmos-sdk/pull/2153)
-    * [simulation] Make logs not just pure strings, speeding it up by a large factor at greater block heights [\#2282](https://github.com/cosmos/cosmos-sdk/issues/2282)
-    * [simulation] Add a concept of weighting the operations [\#2303](https://github.com/cosmos/cosmos-sdk/issues/2303)
-    * [simulation] Logs get written to file if large, and also get printed on panics [\#2285](https://github.com/cosmos/cosmos-sdk/issues/2285)
-    * [simulation] Bank simulations now makes testing auth configurable [\#2425](https://github.com/cosmos/cosmos-sdk/issues/2425)
-    * [gaiad] [\#1992](https://github.com/cosmos/cosmos-sdk/issues/1992) Add optional flag to `gaiad testnet` to make config directory of daemon (default `gaiad`) and cli (default `gaiacli`) configurable
-    * [x/stake] Add stake `Queriers` for Gaia-lite endpoints. This increases the staking endpoints performance by reusing the staking `keeper` logic for queries. [#2249](https://github.com/cosmos/cosmos-sdk/pull/2149)
-    * [store] [\#2017](https://github.com/cosmos/cosmos-sdk/issues/2017) Refactor
+    * [cli] [\#1632](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1632) Add integration tests to ensure `basecoind init && basecoind` start sequences run successfully for both `democoin` and `basecoin` examples.
+    * [store] Speedup IAVL iteration, and consequently everything that requires IAVL iteration. [#2143](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2143)
+    * [store] [\#1952](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1952), [\#2281](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2281) Update IAVL dependency to v0.11.0
+    * [simulation] Make timestamps randomized [#2153](https://github.com/ftlnetwork/ftlnetwork-sdk/pull/2153)
+    * [simulation] Make logs not just pure strings, speeding it up by a large factor at greater block heights [\#2282](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2282)
+    * [simulation] Add a concept of weighting the operations [\#2303](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2303)
+    * [simulation] Logs get written to file if large, and also get printed on panics [\#2285](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2285)
+    * [simulation] Bank simulations now makes testing auth configurable [\#2425](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2425)
+    * [gaiad] [\#1992](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1992) Add optional flag to `gaiad testnet` to make config directory of daemon (default `gaiad`) and cli (default `gaiacli`) configurable
+    * [x/stake] Add stake `Queriers` for Gaia-lite endpoints. This increases the staking endpoints performance by reusing the staking `keeper` logic for queries. [#2249](https://github.com/ftlnetwork/ftlnetwork-sdk/pull/2149)
+    * [store] [\#2017](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2017) Refactor
     gas iterator gas consumption to only consume gas for iterator creation and `Next`
     calls which includes dynamic consumption of value length.
-    * [types/decimal] [\#2378](https://github.com/cosmos/cosmos-sdk/issues/2378) - Added truncate functionality to decimal
-    * [client] [\#1184](https://github.com/cosmos/cosmos-sdk/issues/1184) Remove unused `client/tx/sign.go`.
-    * [tools] [\#2464](https://github.com/cosmos/cosmos-sdk/issues/2464) Lock binary dependencies to a specific version
+    * [types/decimal] [\#2378](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2378) - Added truncate functionality to decimal
+    * [client] [\#1184](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1184) Remove unused `client/tx/sign.go`.
+    * [tools] [\#2464](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2464) Lock binary dependencies to a specific version
     * #2573 [x/distribution] add accum invariance
 
 BUG FIXES
 
 * Gaia CLI  (`gaiacli`)
-    * [cli] [\#1997](https://github.com/cosmos/cosmos-sdk/issues/1997) Handle panics gracefully when `gaiacli stake {delegation,unbond}` fail to unmarshal delegation.
-    * [cli] [\#2265](https://github.com/cosmos/cosmos-sdk/issues/2265) Fix JSON formatting of the `gaiacli send` command.
-    * [cli] [\#2547](https://github.com/cosmos/cosmos-sdk/issues/2547) Mark --to and --amount as required flags for `gaiacli tx send`.
+    * [cli] [\#1997](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1997) Handle panics gracefully when `gaiacli stake {delegation,unbond}` fail to unmarshal delegation.
+    * [cli] [\#2265](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2265) Fix JSON formatting of the `gaiacli send` command.
+    * [cli] [\#2547](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2547) Mark --to and --amount as required flags for `gaiacli tx send`.
 
 * Gaia
   * [x/stake] Return correct Tendermint validator update set on `EndBlocker` by not
-  including non previously bonded validators that have zero power. [#2189](https://github.com/cosmos/cosmos-sdk/issues/2189)
+  including non previously bonded validators that have zero power. [#2189](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2189)
   * [docs] Fixed light client section links
 
 * SDK
-    * [\#1988](https://github.com/cosmos/cosmos-sdk/issues/1988) Make us compile on OpenBSD (disable ledger) [#1988] (https://github.com/cosmos/cosmos-sdk/issues/1988)
-    * [\#2105](https://github.com/cosmos/cosmos-sdk/issues/2105) Fix DB Iterator leak, which may leak a go routine.
-    * [ledger] [\#2064](https://github.com/cosmos/cosmos-sdk/issues/2064) Fix inability to sign and send transactions via the LCD by
+    * [\#1988](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1988) Make us compile on OpenBSD (disable ledger) [#1988] (https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1988)
+    * [\#2105](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2105) Fix DB Iterator leak, which may leak a go routine.
+    * [ledger] [\#2064](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2064) Fix inability to sign and send transactions via the LCD by
     loading a Ledger device at runtime.
-    * [\#2158](https://github.com/cosmos/cosmos-sdk/issues/2158) Fix non-deterministic ordering of validator iteration when slashing in `gov EndBlocker`
-    * [simulation] [\#1924](https://github.com/cosmos/cosmos-sdk/issues/1924) Make simulation stop on SIGTERM
-    * [\#2388](https://github.com/cosmos/cosmos-sdk/issues/2388) Remove dependency on deprecated tendermint/tmlibs repository.
-    * [\#2416](https://github.com/cosmos/cosmos-sdk/issues/2416) Refactored `InitializeTestLCD` to properly include proposing validator in genesis state.
+    * [\#2158](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2158) Fix non-deterministic ordering of validator iteration when slashing in `gov EndBlocker`
+    * [simulation] [\#1924](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1924) Make simulation stop on SIGTERM
+    * [\#2388](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2388) Remove dependency on deprecated tendermint/tmlibs repository.
+    * [\#2416](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2416) Refactored `InitializeTestLCD` to properly include proposing validator in genesis state.
     * #2573 [x/distribution] accum invariance bugfix
     * #2573 [x/slashing] unbonding-delegation slashing invariance bugfix
 
@@ -538,36 +538,36 @@ BUG FIXES
 BREAKING CHANGES
 
 * Gaia REST API (`gaiacli advanced rest-server`)
-  - [x/stake] [\#1880](https://github.com/cosmos/cosmos-sdk/issues/1880) More REST-ful endpoints (large refactor)
-  - [x/slashing] [\#1866](https://github.com/cosmos/cosmos-sdk/issues/1866) `/slashing/signing_info` takes cosmosvalpub instead of cosmosvaladdr
+  - [x/stake] [\#1880](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1880) More REST-ful endpoints (large refactor)
+  - [x/slashing] [\#1866](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1866) `/slashing/signing_info` takes cosmosvalpub instead of cosmosvaladdr
   - use time.Time instead of int64 for time. See Tendermint v0.23.0
   - Signatures are no longer Amino encoded with prefixes (just encoded as raw
     bytes) - see Tendermint v0.23.0
 
 * Gaia CLI  (`gaiacli`)
   -  [x/stake] change `--keybase-sig` to `--identity`
-  -  [x/stake] [\#1828](https://github.com/cosmos/cosmos-sdk/issues/1828) Force user to specify amount on create-validator command by removing default
+  -  [x/stake] [\#1828](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1828) Force user to specify amount on create-validator command by removing default
   -  [x/gov] Change `--proposalID` to `--proposal-id`
-  -  [x/stake, x/gov] [\#1606](https://github.com/cosmos/cosmos-sdk/issues/1606) Use `--from` instead of adhoc flags like `--address-validator`
+  -  [x/stake, x/gov] [\#1606](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1606) Use `--from` instead of adhoc flags like `--address-validator`
         and `--proposer` to indicate the sender address.
-  -  [\#1551](https://github.com/cosmos/cosmos-sdk/issues/1551) Remove `--name` completely
+  -  [\#1551](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1551) Remove `--name` completely
   -  Genesis/key creation (`gaiad init`) now supports user-provided key passwords
 
 * Gaia
   - [x/stake] Inflation doesn't use rationals in calculation (performance boost)
   - [x/stake] Persist a map from `addr->pubkey` in the state since BeginBlock
     doesn't provide pubkeys.
-  - [x/gov] [\#1781](https://github.com/cosmos/cosmos-sdk/issues/1781) Added tags sub-package, changed tags to use dash-case
-  - [x/gov] [\#1688](https://github.com/cosmos/cosmos-sdk/issues/1688) Governance parameters are now stored in globalparams store
-  - [x/gov] [\#1859](https://github.com/cosmos/cosmos-sdk/issues/1859) Slash validators who do not vote on a proposal
-  - [x/gov] [\#1914](https://github.com/cosmos/cosmos-sdk/issues/1914) added TallyResult type that gets stored in Proposal after tallying is finished
+  - [x/gov] [\#1781](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1781) Added tags sub-package, changed tags to use dash-case
+  - [x/gov] [\#1688](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1688) Governance parameters are now stored in globalparams store
+  - [x/gov] [\#1859](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1859) Slash validators who do not vote on a proposal
+  - [x/gov] [\#1914](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1914) added TallyResult type that gets stored in Proposal after tallying is finished
 
 * SDK
   - [baseapp] Msgs are no longer run on CheckTx, removed `ctx.IsCheckTx()`
   - [baseapp] NewBaseApp constructor takes sdk.TxDecoder as argument instead of wire.Codec
   - [types] sdk.NewCoin takes sdk.Int, sdk.NewInt64Coin takes int64
   - [x/auth] Default TxDecoder can be found in `x/auth` rather than baseapp
-  - [client] [\#1551](https://github.com/cosmos/cosmos-sdk/issues/1551): Refactored `CoreContext` to `TxContext` and `QueryContext`
+  - [client] [\#1551](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1551): Refactored `CoreContext` to `TxContext` and `QueryContext`
       - Removed all tx related fields and logic (building & signing) to separate
         structure `TxContext` in `x/auth/client/context`
 
@@ -576,7 +576,7 @@ BREAKING CHANGES
         - change all the cryptography imports.
     - v0.23.0 -> See
       [Changelog](https://github.com/tendermint/tendermint/blob/v0.23.0/CHANGELOG.md#0230)
-      and [SDK PR](https://github.com/cosmos/cosmos-sdk/pull/1927)
+      and [SDK PR](https://github.com/ftlnetwork/ftlnetwork-sdk/pull/1927)
         - BeginBlock no longer includes crypto.Pubkey
         - use time.Time instead of int64 for time.
 
@@ -587,7 +587,7 @@ FEATURES
 
 * Gaia CLI  (`gaiacli`)
     - [x/gov] added `query-proposals` command. Can filter by `depositer`, `voter`, and `status`
-    - [x/stake] [\#2043](https://github.com/cosmos/cosmos-sdk/issues/2043) Added staking query cli cmds for unbonding-delegations and redelegations
+    - [x/stake] [\#2043](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2043) Added staking query cli cmds for unbonding-delegations and redelegations
 
 * Gaia
   - [networks] Added ansible scripts to upgrade seed nodes on a network
@@ -600,7 +600,7 @@ FEATURES
      - Simulates Tendermint's algorithm for validator set updates
      - Simulates validator signing/downtime with a Markov chain, and occaisional double-signatures
      - Includes simulated operations & invariants for staking, slashing, governance, and bank modules
-  - [store] [\#1481](https://github.com/cosmos/cosmos-sdk/issues/1481) Add transient store
+  - [store] [\#1481](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1481) Add transient store
   - [baseapp] Initialize validator set on ResponseInitChain
   - [baseapp] added BaseApp.Seal - ability to seal baseapp parameters once they've been set
   - [cosmos-sdk-cli] New `cosmos-sdk-cli` tool to quickly initialize a new
@@ -610,41 +610,41 @@ FEATURES
 IMPROVEMENTS
 
 * Gaia
-  - [spec] [\#967](https://github.com/cosmos/cosmos-sdk/issues/967) Inflation and distribution specs drastically improved
-  - [x/gov] [\#1773](https://github.com/cosmos/cosmos-sdk/issues/1773) Votes on a proposal can now be queried
+  - [spec] [\#967](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/967) Inflation and distribution specs drastically improved
+  - [x/gov] [\#1773](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1773) Votes on a proposal can now be queried
   - [x/gov] Initial governance parameters can now be set in the genesis file
-  - [x/stake] [\#1815](https://github.com/cosmos/cosmos-sdk/issues/1815) Sped up the processing of `EditValidator` txs.
-  - [config] [\#1930](https://github.com/cosmos/cosmos-sdk/issues/1930) Transactions indexer indexes all tags by default.
-  - [ci] [#2057](https://github.com/cosmos/cosmos-sdk/pull/2057) Run `make localnet-start` on every commit and ensure network reaches at least 10 blocks
+  - [x/stake] [\#1815](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1815) Sped up the processing of `EditValidator` txs.
+  - [config] [\#1930](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1930) Transactions indexer indexes all tags by default.
+  - [ci] [#2057](https://github.com/ftlnetwork/ftlnetwork-sdk/pull/2057) Run `make localnet-start` on every commit and ensure network reaches at least 10 blocks
 
 * SDK
-  - [baseapp] [\#1587](https://github.com/cosmos/cosmos-sdk/issues/1587) Allow any alphanumeric character in route
+  - [baseapp] [\#1587](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1587) Allow any alphanumeric character in route
   - [baseapp] Allow any alphanumeric character in route
   - [tools] Remove `rm -rf vendor/` from `make get_vendor_deps`
   - [x/auth] Recover ErrorOutOfGas panic in order to set sdk.Result attributes correctly
-  - [x/auth] [\#2376](https://github.com/cosmos/cosmos-sdk/issues/2376) No longer runs any signature in a multi-msg, if any account/sequence number is wrong.
-  - [x/auth] [\#2376](https://github.com/cosmos/cosmos-sdk/issues/2376) No longer charge gas for subtracting fees
+  - [x/auth] [\#2376](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2376) No longer runs any signature in a multi-msg, if any account/sequence number is wrong.
+  - [x/auth] [\#2376](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2376) No longer charge gas for subtracting fees
   - [x/bank] Unit tests are now table-driven
   - [tests] Add tests to example apps in docs
   - [tests] Fixes ansible scripts to work with AWS too
-  - [tests] [\#1806](https://github.com/cosmos/cosmos-sdk/issues/1806) CLI tests are now behind the build flag 'cli_test', so go test works on a new repo
+  - [tests] [\#1806](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1806) CLI tests are now behind the build flag 'cli_test', so go test works on a new repo
 
 BUG FIXES
 
 * Gaia CLI  (`gaiacli`)
-  -  [\#1766](https://github.com/cosmos/cosmos-sdk/issues/1766) Fixes bad example for keybase identity
-  -  [x/stake] [\#2021](https://github.com/cosmos/cosmos-sdk/issues/2021) Fixed repeated CLI commands in staking
+  -  [\#1766](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1766) Fixes bad example for keybase identity
+  -  [x/stake] [\#2021](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2021) Fixed repeated CLI commands in staking
 
 * Gaia
-  - [x/stake] [#2077](https://github.com/cosmos/cosmos-sdk/pull/2077) Fixed invalid cliff power comparison
-  - [\#1804](https://github.com/cosmos/cosmos-sdk/issues/1804) Fixes gen-tx genesis generation logic temporarily until upstream updates
-  - [\#1799](https://github.com/cosmos/cosmos-sdk/issues/1799) Fix `gaiad export`
-  - [\#1839](https://github.com/cosmos/cosmos-sdk/issues/1839) Fixed bug where intra-tx counter wasn't set correctly for genesis validators
-  - [x/stake] [\#1858](https://github.com/cosmos/cosmos-sdk/issues/1858) Fixed bug where the cliff validator was not updated correctly
-  - [tests] [\#1675](https://github.com/cosmos/cosmos-sdk/issues/1675) Fix non-deterministic `test_cover`
-  - [tests] [\#1551](https://github.com/cosmos/cosmos-sdk/issues/1551) Fixed invalid LCD test JSON payload in `doIBCTransfer`
+  - [x/stake] [#2077](https://github.com/ftlnetwork/ftlnetwork-sdk/pull/2077) Fixed invalid cliff power comparison
+  - [\#1804](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1804) Fixes gen-tx genesis generation logic temporarily until upstream updates
+  - [\#1799](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1799) Fix `gaiad export`
+  - [\#1839](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1839) Fixed bug where intra-tx counter wasn't set correctly for genesis validators
+  - [x/stake] [\#1858](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1858) Fixed bug where the cliff validator was not updated correctly
+  - [tests] [\#1675](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1675) Fix non-deterministic `test_cover`
+  - [tests] [\#1551](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1551) Fixed invalid LCD test JSON payload in `doIBCTransfer`
   - [basecoin] Fixes coin transaction failure and account query [discussion](https://forum.cosmos.network/t/unmarshalbinarybare-expected-to-read-prefix-bytes-75fbfab8-since-it-is-registered-concrete-but-got-0a141dfa/664/6)
-  - [x/gov] [\#1757](https://github.com/cosmos/cosmos-sdk/issues/1757) Fix VoteOption conversion to String
+  - [x/gov] [\#1757](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1757) Fix VoteOption conversion to String
   * [x/stake] [#2083] Fix broken invariant of bonded validator power decrease
 
 ## 0.23.1
@@ -672,9 +672,9 @@ IMPROVEMENTS
 BUG FIXES
 * [tendermint] Update to v0.22.6
     - Fixes some security vulnerabilities reported in the [Bug Bounty](https://hackerone.com/tendermint)
-*  [\#1797](https://github.com/cosmos/cosmos-sdk/issues/1797) Fix off-by-one error in slashing for downtime
-*  [\#1787](https://github.com/cosmos/cosmos-sdk/issues/1787) Fixed bug where Tally fails due to revoked/unbonding validator
-*  [\#1666](https://github.com/cosmos/cosmos-sdk/issues/1666) Add intra-tx counter to the genesis validators
+*  [\#1797](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1797) Fix off-by-one error in slashing for downtime
+*  [\#1787](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1787) Fixed bug where Tally fails due to revoked/unbonding validator
+*  [\#1666](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1666) Add intra-tx counter to the genesis validators
 
 ## 0.22.0
 
@@ -720,8 +720,8 @@ IMPROVEMENTS
 * [store] Pruning strategy configurable with pruning flag on gaiad start
 
 BUG FIXES
-* [\#1630](https://github.com/cosmos/cosmos-sdk/issues/1630) - redelegation nolonger removes tokens from the delegator liquid account
-* [keys] [\#1629](https://github.com/cosmos/cosmos-sdk/issues/1629) - updating password no longer asks for a new password when the first entered password was incorrect
+* [\#1630](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1630) - redelegation nolonger removes tokens from the delegator liquid account
+* [keys] [\#1629](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1629) - updating password no longer asks for a new password when the first entered password was incorrect
 * [lcd] importing an account would create a random account
 * [server] 'gaiad init' command family now writes provided name as the moniker in `config.toml`
 * [build] Added Ledger build support via `LEDGER_ENABLED=true|false`
@@ -837,9 +837,9 @@ IMPROVEMENTS
 * [docs] Added commands for governance CLI on testnet README
 
 BUG FIXES
-* [x/slashing] [\#1510](https://github.com/cosmos/cosmos-sdk/issues/1510) Unrevoked validators cannot un-revoke themselves
-* [x/stake] [\#1513](https://github.com/cosmos/cosmos-sdk/issues/1513) Validators slashed to zero power are unbonded and removed from the store
-* [x/stake] [\#1567](https://github.com/cosmos/cosmos-sdk/issues/1567) Validators decreased in power but not unbonded are now updated in Tendermint
+* [x/slashing] [\#1510](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1510) Unrevoked validators cannot un-revoke themselves
+* [x/stake] [\#1513](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1513) Validators slashed to zero power are unbonded and removed from the store
+* [x/stake] [\#1567](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1567) Validators decreased in power but not unbonded are now updated in Tendermint
 * [x/stake] error strings lower case
 * [x/stake] pool loose tokens now accounts for unbonding and unbonding tokens not associated with any validator
 * [x/stake] fix revoke bytes ordering (was putting revoked candidates at the top of the list)
@@ -849,20 +849,20 @@ BUG FIXES
 * Retry on HTTP request failure in CLI tests, add option to retry tests in Makefile
 * Fixed bug where chain ID wasn't passed properly in x/bank REST handler, removed Viper hack from ante handler
 * Fixed bug where `democli account` didn't decode the account data correctly
-* [\#872](https://github.com/cosmos/cosmos-sdk/issues/872)  - recovery phrases no longer all end in `abandon`
-* [\#887](https://github.com/cosmos/cosmos-sdk/issues/887)  - limit the size of rationals that can be passed in from user input
-* [\#1052](https://github.com/cosmos/cosmos-sdk/issues/1052) - Make all now works
-* [\#1258](https://github.com/cosmos/cosmos-sdk/issues/1258) - printing big.rat's can no longer overflow int64
-* [\#1259](https://github.com/cosmos/cosmos-sdk/issues/1259) - fix bug where certain tests that could have a nil pointer in defer
-* [\#1343](https://github.com/cosmos/cosmos-sdk/issues/1343) - fixed unnecessary parallelism in CI
-* [\#1353](https://github.com/cosmos/cosmos-sdk/issues/1353) - CLI: Show pool shares fractions in human-readable format
-* [\#1367](https://github.com/cosmos/cosmos-sdk/issues/1367) - set ChainID in InitChain
-* [\#1461](https://github.com/cosmos/cosmos-sdk/issues/1461) - CLI tests now no longer reset your local environment data
-* [\#1505](https://github.com/cosmos/cosmos-sdk/issues/1505) - `gaiacli stake validator` no longer panics if validator doesn't exist
-* [\#1565](https://github.com/cosmos/cosmos-sdk/issues/1565) - fix cliff validator persisting when validator set shrinks from max
-* [\#1287](https://github.com/cosmos/cosmos-sdk/issues/1287) - prevent zero power validators at genesis
+* [\#872](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/872)  - recovery phrases no longer all end in `abandon`
+* [\#887](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/887)  - limit the size of rationals that can be passed in from user input
+* [\#1052](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1052) - Make all now works
+* [\#1258](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1258) - printing big.rat's can no longer overflow int64
+* [\#1259](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1259) - fix bug where certain tests that could have a nil pointer in defer
+* [\#1343](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1343) - fixed unnecessary parallelism in CI
+* [\#1353](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1353) - CLI: Show pool shares fractions in human-readable format
+* [\#1367](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1367) - set ChainID in InitChain
+* [\#1461](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1461) - CLI tests now no longer reset your local environment data
+* [\#1505](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1505) - `gaiacli stake validator` no longer panics if validator doesn't exist
+* [\#1565](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1565) - fix cliff validator persisting when validator set shrinks from max
+* [\#1287](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1287) - prevent zero power validators at genesis
 * [x/stake] fix bug when unbonding/redelegating using `--shares-percent`
-* [\#1010](https://github.com/cosmos/cosmos-sdk/issues/1010) - two validators can't bond with the same pubkey anymore
+* [\#1010](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1010) - two validators can't bond with the same pubkey anymore
 
 
 ## 0.19.0
@@ -888,7 +888,7 @@ IMPROVEMENTS
 * [x/stake] More stake tests added to test ByPower index
 
 FIXES
-* Fixes consensus fault on testnet - see postmortem [here](https://github.com/cosmos/cosmos-sdk/issues/1197#issuecomment-396823021)
+* Fixes consensus fault on testnet - see postmortem [here](https://github.com/ftlnetwork/ftlnetwork-sdk/issues/1197#issuecomment-396823021)
 * [x/stake] bonded inflation removed, non-bonded inflation partially implemented
 * [lcd] Switch to bech32 for addresses on all human readable inputs and outputs
 * [lcd] fixed tx indexing/querying

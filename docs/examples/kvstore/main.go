@@ -13,8 +13,8 @@ import (
 	dbm "github.com/tendermint/tendermint/libs/db"
 	"github.com/tendermint/tendermint/libs/log"
 
-	bam "github.com/cosmos/cosmos-sdk/baseapp"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	bam "github.com/ftlnetwork/ftlnetwork-sdk/baseapp"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
 )
 
 func main() {

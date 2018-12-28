@@ -1,14 +1,14 @@
 # Cosmos SDK
 ![banner](docs/cosmos-sdk-image.png)
 
-[![version](https://img.shields.io/github/tag/cosmos/cosmos-sdk.svg)](https://github.com/cosmos/cosmos-sdk/releases/latest)
-[![CircleCI](https://circleci.com/gh/cosmos/cosmos-sdk/tree/master.svg?style=shield)](https://circleci.com/gh/cosmos/cosmos-sdk/tree/master)
-[![codecov](https://codecov.io/gh/cosmos/cosmos-sdk/branch/master/graph/badge.svg)](https://codecov.io/gh/cosmos/cosmos-sdk)
-[![Go Report Card](https://goreportcard.com/badge/github.com/cosmos/cosmos-sdk)](https://goreportcard.com/report/github.com/cosmos/cosmos-sdk)
-[![license](https://img.shields.io/github/license/cosmos/cosmos-sdk.svg)](https://github.com/cosmos/cosmos-sdk/blob/master/LICENSE)
-[![LoC](https://tokei.rs/b1/github/cosmos/cosmos-sdk)](https://github.com/cosmos/cosmos-sdk)
-[![API Reference](https://godoc.org/github.com/cosmos/cosmos-sdk?status.svg
-)](https://godoc.org/github.com/cosmos/cosmos-sdk)
+[![version](https://img.shields.io/github/tag/ftlnetwork/ftlnetwork-sdk.svg)](https://github.com/ftlnetwork/ftlnetwork-sdk/releases/latest)
+[![CircleCI](https://circleci.com/gh/ftlnetwork/ftlnetwork-sdk/tree/master.svg?style=shield)](https://circleci.com/gh/ftlnetwork/ftlnetwork-sdk/tree/master)
+[![codecov](https://codecov.io/gh/ftlnetwork/ftlnetwork-sdk/branch/master/graph/badge.svg)](https://codecov.io/gh/ftlnetwork/ftlnetwork-sdk)
+[![Go Report Card](https://goreportcard.com/badge/github.com/ftlnetwork/ftlnetwork-sdk)](https://goreportcard.com/report/github.com/ftlnetwork/ftlnetwork-sdk)
+[![license](https://img.shields.io/github/license/ftlnetwork/ftlnetwork-sdk.svg)](https://github.com/ftlnetwork/ftlnetwork-sdk/blob/master/LICENSE)
+[![LoC](https://tokei.rs/b1/github/ftlnetwork/ftlnetwork-sdk)](https://github.com/ftlnetwork/ftlnetwork-sdk)
+[![API Reference](https://godoc.org/github.com/ftlnetwork/ftlnetwork-sdk?status.svg
+)](https://godoc.org/github.com/ftlnetwork/ftlnetwork-sdk)
 [![riot.im](https://img.shields.io/badge/riot.im-JOIN%20CHAT-green.svg)](https://riot.im/app/#/room/#cosmos-sdk:matrix.org)
 
 The Cosmos-SDK is a framework for building blockchain applications in Golang.

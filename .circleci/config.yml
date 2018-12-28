@@ -1,7 +1,7 @@
 version: 2
 
 defaults: &linux_defaults
-  working_directory: /go/src/github.com/cosmos/cosmos-sdk
+  working_directory: /go/src/github.com/ftlnetwork/ftlnetwork-sdk
   docker:
     - image: circleci/golang:1.11.4
   environment:
@@ -15,7 +15,7 @@ defaults: &linux_defaults
 macos_config: &macos_defaults
   macos:
     xcode: "10.1.0"
-  working_directory: /Users/distiller/project/src/github.com/cosmos/cosmos-sdk
+  working_directory: /Users/distiller/project/src/github.com/ftlnetwork/ftlnetwork-sdk
   environment:
     GO_VERSION: "1.11.4"
 
@@ -226,7 +226,7 @@ jobs:
             export PATH="$GOBIN:$PATH"
             make install
             export VERSION="$(git describe --tags --long | sed 's/v\(.*\)/\1/')"
-            for pkg in $(go list github.com/cosmos/cosmos-sdk/... | grep -v github.com/cosmos/cosmos-sdk/cmd/gaia/cli_test | grep -v '/simulation' | circleci tests split --split-by=timings); do
+            for pkg in $(go list github.com/ftlnetwork/ftlnetwork-sdk/... | grep -v github.com/ftlnetwork/ftlnetwork-sdk/cmd/gaia/cli_test | grep -v '/simulation' | circleci tests split --split-by=timings); do
               id=$(basename "$pkg")
               GOCACHE=off go test -timeout 8m -race -coverprofile=/tmp/workspace/profiles/$id.out -covermode=atomic "$pkg" | tee "/tmp/logs/$id-$RANDOM.log"
             done
@@ -263,7 +263,7 @@ jobs:
           command: bash <(curl -s https://codecov.io/bash) -f coverage.txt
 
   localnet:
-      working_directory: /home/circleci/.go_workspace/src/github.com/cosmos/cosmos-sdk
+      working_directory: /home/circleci/.go_workspace/src/github.com/ftlnetwork/ftlnetwork-sdk
       machine:
         image: circleci/classic:latest
       environment:

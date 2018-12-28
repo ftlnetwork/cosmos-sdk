@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
 )
 
 func getTestingMode(tb testing.TB) (testingMode bool, t *testing.T, b *testing.B) {

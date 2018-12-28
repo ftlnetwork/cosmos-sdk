@@ -7,15 +7,15 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/cmd/gaia/app"
-	"github.com/cosmos/cosmos-sdk/codec"
-	srvconfig "github.com/cosmos/cosmos-sdk/server/config"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/auth"
-	authtx "github.com/cosmos/cosmos-sdk/x/auth/client/txbuilder"
-	"github.com/cosmos/cosmos-sdk/x/stake"
-	staketypes "github.com/cosmos/cosmos-sdk/x/stake/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client"
+	"github.com/ftlnetwork/ftlnetwork-sdk/cmd/gaia/app"
+	"github.com/ftlnetwork/ftlnetwork-sdk/codec"
+	srvconfig "github.com/ftlnetwork/ftlnetwork-sdk/server/config"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/auth"
+	authtx "github.com/ftlnetwork/ftlnetwork-sdk/x/auth/client/txbuilder"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/stake"
+	staketypes "github.com/ftlnetwork/ftlnetwork-sdk/x/stake/types"
 
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
@@ -25,7 +25,7 @@ import (
 	"github.com/tendermint/tendermint/types"
 	tmtime "github.com/tendermint/tendermint/types/time"
 
-	"github.com/cosmos/cosmos-sdk/server"
+	"github.com/ftlnetwork/ftlnetwork-sdk/server"
 )
 
 var (

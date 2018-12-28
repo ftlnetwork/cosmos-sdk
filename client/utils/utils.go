@@ -6,16 +6,16 @@ import (
 	"io"
 	"os"
 
-	"github.com/cosmos/cosmos-sdk/codec"
+	"github.com/ftlnetwork/ftlnetwork-sdk/codec"
 
 	"github.com/tendermint/go-amino"
 	"github.com/tendermint/tendermint/libs/common"
 
-	"github.com/cosmos/cosmos-sdk/client/context"
-	"github.com/cosmos/cosmos-sdk/client/keys"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/auth"
-	authtxb "github.com/cosmos/cosmos-sdk/x/auth/client/txbuilder"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client/context"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client/keys"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/auth"
+	authtxb "github.com/ftlnetwork/ftlnetwork-sdk/x/auth/client/txbuilder"
 )
 
 // CompleteAndBroadcastTxCli implements a utility function that facilitates

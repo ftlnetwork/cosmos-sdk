@@ -10,17 +10,17 @@ import (
 
 	"github.com/cosmos/go-bip39"
 
-	"github.com/cosmos/cosmos-sdk/crypto"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/hd"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/mintkey"
-	"github.com/cosmos/cosmos-sdk/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/crypto"
+	"github.com/ftlnetwork/ftlnetwork-sdk/crypto/keys/hd"
+	"github.com/ftlnetwork/ftlnetwork-sdk/crypto/keys/mintkey"
+	"github.com/ftlnetwork/ftlnetwork-sdk/types"
 
 	tmcrypto "github.com/tendermint/tendermint/crypto"
 	"github.com/tendermint/tendermint/crypto/encoding/amino"
 	"github.com/tendermint/tendermint/crypto/secp256k1"
 	dbm "github.com/tendermint/tendermint/libs/db"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/keyerror"
+	"github.com/ftlnetwork/ftlnetwork-sdk/crypto/keys/keyerror"
 )
 
 var _ Keybase = dbKeybase{}

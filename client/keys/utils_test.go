@@ -7,7 +7,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys"
+	"github.com/ftlnetwork/ftlnetwork-sdk/crypto/keys"
 )
 
 func TestGetKeyBaseLocks(t *testing.T) {

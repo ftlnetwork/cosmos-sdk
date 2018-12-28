@@ -7,9 +7,9 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/x/auth"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client"
+	"github.com/ftlnetwork/ftlnetwork-sdk/codec"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/auth"
 
 	"github.com/spf13/viper"
 
@@ -19,9 +19,9 @@ import (
 	tmliteProxy "github.com/tendermint/tendermint/lite/proxy"
 	rpcclient "github.com/tendermint/tendermint/rpc/client"
 
-	"github.com/cosmos/cosmos-sdk/client/keys"
-	cskeys "github.com/cosmos/cosmos-sdk/crypto/keys"
-	"github.com/cosmos/cosmos-sdk/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client/keys"
+	cskeys "github.com/ftlnetwork/ftlnetwork-sdk/crypto/keys"
+	"github.com/ftlnetwork/ftlnetwork-sdk/types"
 )
 
 var (

@@ -10,14 +10,14 @@ import (
 	"github.com/tendermint/tendermint/libs/log"
 	tmtypes "github.com/tendermint/tendermint/types"
 
-	bam "github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/docs/examples/basecoin/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/auth"
-	"github.com/cosmos/cosmos-sdk/x/bank"
-	"github.com/cosmos/cosmos-sdk/x/ibc"
-	"github.com/cosmos/cosmos-sdk/x/params"
+	bam "github.com/ftlnetwork/ftlnetwork-sdk/baseapp"
+	"github.com/ftlnetwork/ftlnetwork-sdk/codec"
+	"github.com/ftlnetwork/ftlnetwork-sdk/docs/examples/basecoin/types"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/auth"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/bank"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/ibc"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/params"
 )
 
 const (
@@ -152,14 +152,14 @@ func (app *BasecoinApp) initChainer(ctx sdk.Context, req abci.RequestInitChain) 
 	genesisState := new(types.GenesisState)
 	err := app.cdc.UnmarshalJSON(stateJSON, genesisState)
 	if err != nil {
-		// TODO: https://github.com/cosmos/cosmos-sdk/issues/468
+		// TODO: https://github.com/ftlnetwork/ftlnetwork-sdk/issues/468
 		panic(err)
 	}
 
 	for _, gacc := range genesisState.Accounts {
 		acc, err := gacc.ToAppAccount()
 		if err != nil {
-			// TODO: https://github.com/cosmos/cosmos-sdk/issues/468
+			// TODO: https://github.com/ftlnetwork/ftlnetwork-sdk/issues/468
 			panic(err)
 		}
 

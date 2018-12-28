@@ -1,8 +1,8 @@
 package simulation
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/mock/simulation"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/mock/simulation"
 )
 
 // AllInvariants tests all governance invariants

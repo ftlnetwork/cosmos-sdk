@@ -3,7 +3,7 @@ package store
 import (
 	dbm "github.com/tendermint/tendermint/libs/db"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
 )
 
 var _ KVStore = (*transientStore)(nil)

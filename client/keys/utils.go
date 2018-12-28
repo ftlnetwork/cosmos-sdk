@@ -10,10 +10,10 @@ import (
 	"github.com/tendermint/tendermint/libs/cli"
 	dbm "github.com/tendermint/tendermint/libs/db"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/crypto/keys"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client"
+	"github.com/ftlnetwork/ftlnetwork-sdk/codec"
+	"github.com/ftlnetwork/ftlnetwork-sdk/crypto/keys"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
 )
 
 // KeyDBName is the directory under root where we store the keys

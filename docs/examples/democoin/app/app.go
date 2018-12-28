@@ -10,20 +10,20 @@ import (
 	"github.com/tendermint/tendermint/libs/log"
 	tmtypes "github.com/tendermint/tendermint/types"
 
-	bam "github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/auth"
-	"github.com/cosmos/cosmos-sdk/x/bank"
-	"github.com/cosmos/cosmos-sdk/x/ibc"
-	"github.com/cosmos/cosmos-sdk/x/params"
-	"github.com/cosmos/cosmos-sdk/x/stake"
+	bam "github.com/ftlnetwork/ftlnetwork-sdk/baseapp"
+	"github.com/ftlnetwork/ftlnetwork-sdk/codec"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/auth"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/bank"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/ibc"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/params"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/stake"
 
-	"github.com/cosmos/cosmos-sdk/docs/examples/democoin/types"
-	"github.com/cosmos/cosmos-sdk/docs/examples/democoin/x/cool"
-	"github.com/cosmos/cosmos-sdk/docs/examples/democoin/x/pow"
-	"github.com/cosmos/cosmos-sdk/docs/examples/democoin/x/simplestake"
-	"github.com/cosmos/cosmos-sdk/docs/examples/democoin/x/sketchy"
+	"github.com/ftlnetwork/ftlnetwork-sdk/docs/examples/democoin/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/docs/examples/democoin/x/cool"
+	"github.com/ftlnetwork/ftlnetwork-sdk/docs/examples/democoin/x/pow"
+	"github.com/ftlnetwork/ftlnetwork-sdk/docs/examples/democoin/x/simplestake"
+	"github.com/ftlnetwork/ftlnetwork-sdk/docs/examples/democoin/x/sketchy"
 )
 
 const (
@@ -148,14 +148,14 @@ func (app *DemocoinApp) initChainerFn(coolKeeper cool.Keeper, powKeeper pow.Keep
 		genesisState := new(types.GenesisState)
 		err := app.cdc.UnmarshalJSON(stateJSON, genesisState)
 		if err != nil {
-			panic(err) // TODO https://github.com/cosmos/cosmos-sdk/issues/468
+			panic(err) // TODO https://github.com/ftlnetwork/ftlnetwork-sdk/issues/468
 			// return sdk.ErrGenesisParse("").TraceCause(err, "")
 		}
 
 		for _, gacc := range genesisState.Accounts {
 			acc, err := gacc.ToAppAccount()
 			if err != nil {
-				panic(err) // TODO https://github.com/cosmos/cosmos-sdk/issues/468
+				panic(err) // TODO https://github.com/ftlnetwork/ftlnetwork-sdk/issues/468
 				//	return sdk.ErrGenesisParse("").TraceCause(err, "")
 			}
 			app.accountKeeper.SetAccount(ctx, acc)
@@ -164,13 +164,13 @@ func (app *DemocoinApp) initChainerFn(coolKeeper cool.Keeper, powKeeper pow.Keep
 		// Application specific genesis handling
 		err = cool.InitGenesis(ctx, app.coolKeeper, genesisState.CoolGenesis)
 		if err != nil {
-			panic(err) // TODO https://github.com/cosmos/cosmos-sdk/issues/468
+			panic(err) // TODO https://github.com/ftlnetwork/ftlnetwork-sdk/issues/468
 			//	return sdk.ErrGenesisParse("").TraceCause(err, "")
 		}
 
 		err = pow.InitGenesis(ctx, app.powKeeper, genesisState.POWGenesis)
 		if err != nil {
-			panic(err) // TODO https://github.com/cosmos/cosmos-sdk/issues/468
+			panic(err) // TODO https://github.com/ftlnetwork/ftlnetwork-sdk/issues/468
 			//	return sdk.ErrGenesisParse("").TraceCause(err, "")
 		}
 

@@ -3,10 +3,10 @@ package simulation
 import (
 	"fmt"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	distr "github.com/cosmos/cosmos-sdk/x/distribution"
-	"github.com/cosmos/cosmos-sdk/x/mock/simulation"
-	"github.com/cosmos/cosmos-sdk/x/stake"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
+	distr "github.com/ftlnetwork/ftlnetwork-sdk/x/distribution"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/mock/simulation"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/stake"
 )
 
 // AllInvariants runs all invariants of the distribution module

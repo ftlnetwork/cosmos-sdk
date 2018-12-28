@@ -16,22 +16,22 @@ import (
 	dbm "github.com/tendermint/tendermint/libs/db"
 	"github.com/tendermint/tendermint/libs/log"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/auth"
-	authsim "github.com/cosmos/cosmos-sdk/x/auth/simulation"
-	banksim "github.com/cosmos/cosmos-sdk/x/bank/simulation"
-	distr "github.com/cosmos/cosmos-sdk/x/distribution"
-	distrsim "github.com/cosmos/cosmos-sdk/x/distribution/simulation"
-	"github.com/cosmos/cosmos-sdk/x/gov"
-	govsim "github.com/cosmos/cosmos-sdk/x/gov/simulation"
-	"github.com/cosmos/cosmos-sdk/x/mint"
-	"github.com/cosmos/cosmos-sdk/x/mock/simulation"
-	"github.com/cosmos/cosmos-sdk/x/slashing"
-	slashingsim "github.com/cosmos/cosmos-sdk/x/slashing/simulation"
-	stake "github.com/cosmos/cosmos-sdk/x/stake"
-	stakesim "github.com/cosmos/cosmos-sdk/x/stake/simulation"
-	stakeTypes "github.com/cosmos/cosmos-sdk/x/stake/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/baseapp"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/auth"
+	authsim "github.com/ftlnetwork/ftlnetwork-sdk/x/auth/simulation"
+	banksim "github.com/ftlnetwork/ftlnetwork-sdk/x/bank/simulation"
+	distr "github.com/ftlnetwork/ftlnetwork-sdk/x/distribution"
+	distrsim "github.com/ftlnetwork/ftlnetwork-sdk/x/distribution/simulation"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/gov"
+	govsim "github.com/ftlnetwork/ftlnetwork-sdk/x/gov/simulation"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/mint"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/mock/simulation"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/slashing"
+	slashingsim "github.com/ftlnetwork/ftlnetwork-sdk/x/slashing/simulation"
+	stake "github.com/ftlnetwork/ftlnetwork-sdk/x/stake"
+	stakesim "github.com/ftlnetwork/ftlnetwork-sdk/x/stake/simulation"
+	stakeTypes "github.com/ftlnetwork/ftlnetwork-sdk/x/stake/types"
 )
 
 var (
@@ -220,7 +220,7 @@ func fauxMerkleModeOpt(bapp *baseapp.BaseApp) {
 }
 
 // Profile with:
-// /usr/local/go/bin/go test -benchmem -run=^$ github.com/cosmos/cosmos-sdk/cmd/gaia/app -bench ^BenchmarkFullGaiaSimulation$ -SimulationCommit=true -cpuprofile cpu.out
+// /usr/local/go/bin/go test -benchmem -run=^$ github.com/ftlnetwork/ftlnetwork-sdk/cmd/gaia/app -bench ^BenchmarkFullGaiaSimulation$ -SimulationCommit=true -cpuprofile cpu.out
 func BenchmarkFullGaiaSimulation(b *testing.B) {
 	// Setup Gaia application
 	var logger log.Logger

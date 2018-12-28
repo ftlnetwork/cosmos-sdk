@@ -1,8 +1,8 @@
 package keeper
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/distribution/types"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/distribution/types"
 )
 
 // Allocate fees handles distribution of the collected fees
@@ -20,7 +20,7 @@ func (k Keeper) AllocateTokens(ctx sdk.Context, percentVotes sdk.Dec, proposer s
 
 	feePool := k.GetFeePool(ctx)
 	// Temporary workaround to keep CanWithdrawInvariant happy.
-	// General discussions here: https://github.com/cosmos/cosmos-sdk/issues/2906#issuecomment-441867634
+	// General discussions here: https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2906#issuecomment-441867634
 	if k.stakeKeeper.GetLastTotalPower(ctx).IsZero() {
 		feePool.CommunityPool = feePool.CommunityPool.Plus(feesCollectedDec)
 		k.SetFeePool(ctx, feePool)

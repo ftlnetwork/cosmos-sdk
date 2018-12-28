@@ -14,10 +14,10 @@ import (
 	dbm "github.com/tendermint/tendermint/libs/db"
 	"github.com/tendermint/tendermint/libs/log"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/store"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/version"
+	"github.com/ftlnetwork/ftlnetwork-sdk/codec"
+	"github.com/ftlnetwork/ftlnetwork-sdk/store"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/version"
 )
 
 // Key to store the consensus params in the main store.
@@ -669,7 +669,7 @@ func (app *BaseApp) cacheTxContext(ctx sdk.Context, txBytes []byte) (
 	sdk.Context, sdk.CacheMultiStore) {
 
 	ms := ctx.MultiStore()
-	// TODO: https://github.com/cosmos/cosmos-sdk/issues/2824
+	// TODO: https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2824
 	msCache := ms.CacheMultiStore()
 	if msCache.TracingEnabled() {
 		msCache = msCache.WithTracingContext(
@@ -751,7 +751,7 @@ func (app *BaseApp) runTx(mode runTxMode, txBytes []byte, tx sdk.Tx) (result sdk
 
 		// Cache wrap context before anteHandler call in case it aborts.
 		// This is required for both CheckTx and DeliverTx.
-		// https://github.com/cosmos/cosmos-sdk/issues/2772
+		// https://github.com/ftlnetwork/ftlnetwork-sdk/issues/2772
 		// NOTE: Alternatively, we could require that anteHandler ensures that
 		// writes do not happen if aborted/failed.  This may have some
 		// performance benefits, but it'll be more difficult to get right.

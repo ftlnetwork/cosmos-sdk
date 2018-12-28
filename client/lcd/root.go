@@ -14,15 +14,15 @@ import (
 	"github.com/tendermint/tendermint/libs/log"
 	rpcserver "github.com/tendermint/tendermint/rpc/lib/server"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/context"
-	"github.com/cosmos/cosmos-sdk/client/keys"
-	"github.com/cosmos/cosmos-sdk/codec"
-	keybase "github.com/cosmos/cosmos-sdk/crypto/keys"
-	"github.com/cosmos/cosmos-sdk/server"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client/context"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client/keys"
+	"github.com/ftlnetwork/ftlnetwork-sdk/codec"
+	keybase "github.com/ftlnetwork/ftlnetwork-sdk/crypto/keys"
+	"github.com/ftlnetwork/ftlnetwork-sdk/server"
 
 	// Import statik for light client stuff
-	_ "github.com/cosmos/cosmos-sdk/client/lcd/statik"
+	_ "github.com/ftlnetwork/ftlnetwork-sdk/client/lcd/statik"
 )
 
 // RestServer represents the Light Client Rest server

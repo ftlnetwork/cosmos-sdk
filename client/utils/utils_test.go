@@ -5,16 +5,16 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/x/auth"
+	"github.com/ftlnetwork/ftlnetwork-sdk/codec"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/auth"
 	"github.com/stretchr/testify/require"
 	"github.com/tendermint/tendermint/crypto/ed25519"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/tendermint/tendermint/libs/common"
 
-	"github.com/cosmos/cosmos-sdk/cmd/gaia/app"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/cmd/gaia/app"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
 )
 
 var (

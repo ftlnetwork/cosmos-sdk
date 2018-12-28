@@ -2,10 +2,10 @@
 package stake
 
 import (
-	"github.com/cosmos/cosmos-sdk/x/stake/keeper"
-	"github.com/cosmos/cosmos-sdk/x/stake/querier"
-	"github.com/cosmos/cosmos-sdk/x/stake/tags"
-	"github.com/cosmos/cosmos-sdk/x/stake/types"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/stake/keeper"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/stake/querier"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/stake/tags"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/stake/types"
 )
 
 type (

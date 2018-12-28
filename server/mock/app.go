@@ -11,9 +11,9 @@ import (
 	dbm "github.com/tendermint/tendermint/libs/db"
 	"github.com/tendermint/tendermint/libs/log"
 
-	bam "github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	bam "github.com/ftlnetwork/ftlnetwork-sdk/baseapp"
+	"github.com/ftlnetwork/ftlnetwork-sdk/codec"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
 )
 
 // NewApp creates a simple mock kvstore app for testing. It should work
@@ -90,7 +90,7 @@ func InitChainer(key sdk.StoreKey) func(sdk.Context, abci.RequestInitChain) abci
 		genesisState := new(GenesisJSON)
 		err := json.Unmarshal(stateJSON, genesisState)
 		if err != nil {
-			panic(err) // TODO https://github.com/cosmos/cosmos-sdk/issues/468
+			panic(err) // TODO https://github.com/ftlnetwork/ftlnetwork-sdk/issues/468
 			// return sdk.ErrGenesisParse("").TraceCause(err, "")
 		}
 

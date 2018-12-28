@@ -9,13 +9,13 @@ import (
 	dbm "github.com/tendermint/tendermint/libs/db"
 	"github.com/tendermint/tendermint/types"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys"
+	"github.com/ftlnetwork/ftlnetwork-sdk/crypto/keys"
 
 	tmtypes "github.com/tendermint/tendermint/types"
 
-	clkeys "github.com/cosmos/cosmos-sdk/client/keys"
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	clkeys "github.com/ftlnetwork/ftlnetwork-sdk/client/keys"
+	"github.com/ftlnetwork/ftlnetwork-sdk/codec"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
 )
 
 // SimpleGenTx is a simple genesis tx

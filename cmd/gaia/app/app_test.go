@@ -8,13 +8,13 @@ import (
 	"github.com/tendermint/tendermint/libs/db"
 	"github.com/tendermint/tendermint/libs/log"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/x/auth"
-	distr "github.com/cosmos/cosmos-sdk/x/distribution"
-	"github.com/cosmos/cosmos-sdk/x/gov"
-	"github.com/cosmos/cosmos-sdk/x/mint"
-	"github.com/cosmos/cosmos-sdk/x/slashing"
-	"github.com/cosmos/cosmos-sdk/x/stake"
+	"github.com/ftlnetwork/ftlnetwork-sdk/codec"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/auth"
+	distr "github.com/ftlnetwork/ftlnetwork-sdk/x/distribution"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/gov"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/mint"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/slashing"
+	"github.com/ftlnetwork/ftlnetwork-sdk/x/stake"
 
 	abci "github.com/tendermint/tendermint/abci/types"
 )

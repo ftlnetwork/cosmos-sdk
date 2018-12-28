@@ -9,12 +9,12 @@ import (
 	"github.com/tendermint/tendermint/crypto"
 	"github.com/tendermint/tendermint/crypto/secp256k1"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
 )
 
 var (
 	// TODO: Allow this to be configurable in the same way as minimum fees.
-	// ref: https://github.com/cosmos/cosmos-sdk/issues/3101
+	// ref: https://github.com/ftlnetwork/ftlnetwork-sdk/issues/3101
 	gasPerUnitCost uint64 = 10000 // how much gas = 1 atom
 )
 

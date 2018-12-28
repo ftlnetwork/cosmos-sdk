@@ -18,9 +18,9 @@ import (
 	tmsm "github.com/tendermint/tendermint/state"
 	tm "github.com/tendermint/tendermint/types"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/cmd/gaia/app"
-	"github.com/cosmos/cosmos-sdk/server"
+	"github.com/ftlnetwork/ftlnetwork-sdk/baseapp"
+	"github.com/ftlnetwork/ftlnetwork-sdk/cmd/gaia/app"
+	"github.com/ftlnetwork/ftlnetwork-sdk/server"
 )
 
 var (

@@ -10,7 +10,7 @@ import (
 	"github.com/tendermint/tendermint/libs/common"
 	"github.com/tendermint/tendermint/p2p"
 
-	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/ftlnetwork/ftlnetwork-sdk/client"
 
 	"github.com/spf13/cobra"
 
@@ -20,11 +20,11 @@ import (
 	"github.com/tendermint/tendermint/libs/log"
 	tmtypes "github.com/tendermint/tendermint/types"
 
-	gaiaInit "github.com/cosmos/cosmos-sdk/cmd/gaia/init"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/docs/examples/democoin/app"
-	"github.com/cosmos/cosmos-sdk/server"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	gaiaInit "github.com/ftlnetwork/ftlnetwork-sdk/cmd/gaia/init"
+	"github.com/ftlnetwork/ftlnetwork-sdk/codec"
+	"github.com/ftlnetwork/ftlnetwork-sdk/docs/examples/democoin/app"
+	"github.com/ftlnetwork/ftlnetwork-sdk/server"
+	sdk "github.com/ftlnetwork/ftlnetwork-sdk/types"
 )
 
 const (
