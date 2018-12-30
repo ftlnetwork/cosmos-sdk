@@ -128,6 +128,6 @@ func (acc *BaseAccount) SetSequence(seq uint64) error {
 // Most users shouldn't use this, but this comes in handy for tests.
 func RegisterBaseAccount(cdc *codec.Codec) {
 	cdc.RegisterInterface((*Account)(nil), nil)
-	cdc.RegisterConcrete(&BaseAccount{}, "cosmos-sdk/BaseAccount", nil)
+	cdc.RegisterConcrete(&BaseAccount{}, "ftlnetwork-sdk/BaseAccount", nil)
 	codec.RegisterCrypto(cdc)
 }

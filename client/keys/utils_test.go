@@ -11,7 +11,7 @@ import (
 )
 
 func TestGetKeyBaseLocks(t *testing.T) {
-	dir, err := ioutil.TempDir("", "cosmos-sdk-keys")
+	dir, err := ioutil.TempDir("", "ftlnetwork-sdk-keys")
 	require.Nil(t, err)
 	defer os.RemoveAll(dir)
 

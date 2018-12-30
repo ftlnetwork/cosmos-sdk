@@ -6,11 +6,11 @@ import (
 
 // Register concrete types on codec codec
 func RegisterCodec(cdc *codec.Codec) {
-	cdc.RegisterConcrete(MsgCreateValidator{}, "cosmos-sdk/MsgCreateValidator", nil)
-	cdc.RegisterConcrete(MsgEditValidator{}, "cosmos-sdk/MsgEditValidator", nil)
-	cdc.RegisterConcrete(MsgDelegate{}, "cosmos-sdk/MsgDelegate", nil)
-	cdc.RegisterConcrete(MsgBeginUnbonding{}, "cosmos-sdk/BeginUnbonding", nil)
-	cdc.RegisterConcrete(MsgBeginRedelegate{}, "cosmos-sdk/BeginRedelegate", nil)
+	cdc.RegisterConcrete(MsgCreateValidator{}, "ftlnetwork-sdk/MsgCreateValidator", nil)
+	cdc.RegisterConcrete(MsgEditValidator{}, "ftlnetwork-sdk/MsgEditValidator", nil)
+	cdc.RegisterConcrete(MsgDelegate{}, "ftlnetwork-sdk/MsgDelegate", nil)
+	cdc.RegisterConcrete(MsgBeginUnbonding{}, "ftlnetwork-sdk/BeginUnbonding", nil)
+	cdc.RegisterConcrete(MsgBeginRedelegate{}, "ftlnetwork-sdk/BeginRedelegate", nil)
 }
 
 // generic sealed codec to be used throughout sdk

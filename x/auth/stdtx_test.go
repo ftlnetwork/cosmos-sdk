@@ -133,7 +133,7 @@ func TestDefaultTxEncoder(t *testing.T) {
 	cdc := codec.New()
 	sdk.RegisterCodec(cdc)
 	RegisterCodec(cdc)
-	cdc.RegisterConcrete(sdk.TestMsg{}, "cosmos-sdk/Test", nil)
+	cdc.RegisterConcrete(sdk.TestMsg{}, "ftlnetwork-sdk/Test", nil)
 	encoder := DefaultTxEncoder(cdc)
 
 	msgs := []sdk.Msg{sdk.NewTestMsg(addr)}

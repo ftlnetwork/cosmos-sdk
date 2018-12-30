@@ -8,8 +8,8 @@ import (
 )
 
 var rootCmd = &cobra.Command{
-	Use:   "cosmos-sdk-cli",
-	Short: "Tools to develop on cosmos-sdk",
+	Use:   "ftlnetwork-sdk-cli",
+	Short: "Tools to develop on ftlnetwork-sdk",
 }
 
 // Execute the command

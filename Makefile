@@ -9,7 +9,7 @@ GOTOOLS = \
 	github.com/alecthomas/gometalinter \
 	github.com/rakyll/statik
 GOBIN ?= $(GOPATH)/bin
-all: devtools get_vendor_deps install install_examples install_cosmos-sdk-cli test_lint test
+all: devtools get_vendor_deps install install_examples install_ftlnetwork-sdk-cli test_lint test
 
 # The below include contains the tools target.
 include scripts/Makefile
@@ -64,11 +64,11 @@ build-linux:
 update_gaia_lite_docs:
 	@statik -src=client/lcd/swagger-ui -dest=client/lcd -f
 
-build_cosmos-sdk-cli:
+build_ftlnetwork-sdk-cli:
 ifeq ($(OS),Windows_NT)
-	go build $(BUILD_FLAGS) -o build/cosmos-sdk-cli.exe ./cmd/cosmos-sdk-cli
+	go build $(BUILD_FLAGS) -o build/ftlnetwork-sdk-cli.exe ./cmd/ftlnetwork-sdk-cli
 else
-	go build $(BUILD_FLAGS) -o build/cosmos-sdk-cli ./cmd/cosmos-sdk-cli
+	go build $(BUILD_FLAGS) -o build/ftlnetwork-sdk-cli ./cmd/ftlnetwork-sdk-cli
 endif
 
 build_examples:
@@ -97,8 +97,8 @@ install_examples:
 	go install $(BUILD_FLAGS) ./docs/examples/democoin/cmd/democoind
 	go install $(BUILD_FLAGS) ./docs/examples/democoin/cmd/democli
 
-install_cosmos-sdk-cli:
-	go install $(BUILD_FLAGS) ./cmd/cosmos-sdk-cli
+install_ftlnetwork-sdk-cli:
+	go install $(BUILD_FLAGS) ./cmd/ftlnetwork-sdk-cli
 
 install_debug:
 	go install $(BUILD_FLAGS) ./cmd/gaia/cmd/gaiadebug
@@ -267,7 +267,7 @@ localnet-stop:
 # To avoid unintended conflicts with file names, always add to .PHONY
 # unless there is a reason not to.
 # https://www.gnu.org/software/make/manual/html_node/Phony-Targets.html
-.PHONY: build build_cosmos-sdk-cli build_examples install install_examples install_cosmos-sdk-cli install_debug dist \
+.PHONY: build build_ftlnetwork-sdk-cli build_examples install install_examples install_ftlnetwork-sdk-cli install_debug dist \
 check_tools check_dev_tools get_vendor_deps draw_deps test test_cli test_unit \
 test_cover test_lint benchmark devdoc_init devdoc devdoc_save devdoc_update \
 build-linux build-docker-gaiadnode localnet-start localnet-stop \

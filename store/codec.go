@@ -4,7 +4,7 @@ import (
 	"github.com/ftlnetwork/ftlnetwork-sdk/types"
 )
 
-// Import cosmos-sdk/types/store.go for convenience.
+// Import ftlnetwork-sdk/types/store.go for convenience.
 // nolint
 type (
 	PruningStrategy  = types.PruningStrategy

@@ -106,6 +106,6 @@ func compareEncoders(t *testing.T, expected sdk.TxEncoder, actual sdk.TxEncoder)
 
 func makeCodec() *codec.Codec {
 	cdc := app.MakeCodec()
-	cdc.RegisterConcrete(sdk.TestMsg{}, "cosmos-sdk/Test", nil)
+	cdc.RegisterConcrete(sdk.TestMsg{}, "ftlnetwork-sdk/Test", nil)
 	return cdc
 }

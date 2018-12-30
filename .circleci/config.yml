@@ -297,7 +297,7 @@ jobs:
       - run:
           name: Trigger website build
           command: |
-            chamber exec cosmos-sdk -- start_website_build
+            chamber exec ftlnetwork-sdk -- start_website_build
 
   macos_ci:
     <<: *macos_defaults

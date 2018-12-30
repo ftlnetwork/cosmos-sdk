@@ -6,10 +6,10 @@ import (
 
 // Register concrete types on codec codec
 func RegisterCodec(cdc *codec.Codec) {
-	cdc.RegisterConcrete(MsgWithdrawDelegatorRewardsAll{}, "cosmos-sdk/MsgWithdrawDelegationRewardsAll", nil)
-	cdc.RegisterConcrete(MsgWithdrawDelegatorReward{}, "cosmos-sdk/MsgWithdrawDelegationReward", nil)
-	cdc.RegisterConcrete(MsgWithdrawValidatorRewardsAll{}, "cosmos-sdk/MsgWithdrawValidatorRewardsAll", nil)
-	cdc.RegisterConcrete(MsgSetWithdrawAddress{}, "cosmos-sdk/MsgModifyWithdrawAddress", nil)
+	cdc.RegisterConcrete(MsgWithdrawDelegatorRewardsAll{}, "ftlnetwork-sdk/MsgWithdrawDelegationRewardsAll", nil)
+	cdc.RegisterConcrete(MsgWithdrawDelegatorReward{}, "ftlnetwork-sdk/MsgWithdrawDelegationReward", nil)
+	cdc.RegisterConcrete(MsgWithdrawValidatorRewardsAll{}, "ftlnetwork-sdk/MsgWithdrawValidatorRewardsAll", nil)
+	cdc.RegisterConcrete(MsgSetWithdrawAddress{}, "ftlnetwork-sdk/MsgModifyWithdrawAddress", nil)
 }
 
 // generic sealed codec to be used throughout module
