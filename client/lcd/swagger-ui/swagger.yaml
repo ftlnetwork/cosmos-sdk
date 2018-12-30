@@ -2011,11 +2011,11 @@ definitions:
   Address:
     type: string
     description: bech32 encoded address
-    example: cosmos1depk54cuajgkzea6zpgkq36tnjwdzv4afc3d27
+    example: ftlnet1depk54cuajgkzea6zpgkq36tnjwdzv4afc3d27
   ValidatorAddress:
     type: string
     description: bech32 encoded address
-    example: cosmosvaloper1depk54cuajgkzea6zpgkq36tnjwdzv4avv9cxd
+    example: ftlnetvaloper1depk54cuajgkzea6zpgkq36tnjwdzv4avv9cxd
   Coin:
     type: object
     properties:
@@ -2260,7 +2260,7 @@ definitions:
         $ref: '#/definitions/ValidatorAddress'
       pub_key:
         type: string
-        example: cosmosvalconspub1zcjduepq7sjfglw7ra4mjxpw4ph7dtdhdheh7nz8dfgl6t8u2n5szuuql9mqsrwquu
+        example: ftlnetvalconspub1zcjduepq7sjfglw7ra4mjxpw4ph7dtdhdheh7nz8dfgl6t8u2n5szuuql9mqsrwquu
       power:
         type: string
         example: "1000"
@@ -2339,7 +2339,7 @@ definitions:
         $ref: '#/definitions/ValidatorAddress'
       consensus_pubkey:
         type: string
-        example: cosmosvalconspub1zcjduepq7sjfglw7ra4mjxpw4ph7dtdhdheh7nz8dfgl6t8u2n5szuuql9mqsrwquu
+        example: ftlnetvalconspub1zcjduepq7sjfglw7ra4mjxpw4ph7dtdhdheh7nz8dfgl6t8u2n5szuuql9mqsrwquu
       jailed:
         type: boolean
       status:

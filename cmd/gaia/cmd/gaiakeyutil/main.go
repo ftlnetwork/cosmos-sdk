@@ -8,7 +8,7 @@ import (
 	"github.com/tendermint/tendermint/libs/bech32"
 )
 
-var bech32Prefixes = []string{"cosmos", "cosmospub", "cosmosvaloper", "cosmosvaloperpub", "cosmosvalcons", "cosmosvalconspub"}
+var bech32Prefixes = []string{"ftlnet", "ftlnetpub", "ftlnetvaloper", "ftlnetvaloperpub", "ftlnetvalcons", "ftlnetvalconspub"}
 
 func main() {
 	if len(os.Args) < 2 {

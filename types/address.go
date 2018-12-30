@@ -8,7 +8,7 @@ import (
 	"fmt"
 
 	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/crypto/encoding/amino"
+	cryptoAmino "github.com/tendermint/tendermint/crypto/encoding/amino"
 
 	"github.com/tendermint/tendermint/libs/bech32"
 )
@@ -18,17 +18,17 @@ const (
 	AddrLen = 20
 
 	// Bech32PrefixAccAddr defines the Bech32 prefix of an account's address
-	Bech32PrefixAccAddr = "cosmos"
+	Bech32PrefixAccAddr = "ftlnet"
 	// Bech32PrefixAccPub defines the Bech32 prefix of an account's public key
-	Bech32PrefixAccPub = "cosmospub"
+	Bech32PrefixAccPub = "ftlnetpub"
 	// Bech32PrefixValAddr defines the Bech32 prefix of a validator's operator address
-	Bech32PrefixValAddr = "cosmosvaloper"
+	Bech32PrefixValAddr = "ftlnetvaloper"
 	// Bech32PrefixValPub defines the Bech32 prefix of a validator's operator public key
-	Bech32PrefixValPub = "cosmosvaloperpub"
+	Bech32PrefixValPub = "ftlnetvaloperpub"
 	// Bech32PrefixConsAddr defines the Bech32 prefix of a consensus node address
-	Bech32PrefixConsAddr = "cosmosvalcons"
+	Bech32PrefixConsAddr = "ftlnetvalcons"
 	// Bech32PrefixConsPub defines the Bech32 prefix of a consensus node public key
-	Bech32PrefixConsPub = "cosmosvalconspub"
+	Bech32PrefixConsPub = "ftlnetvalconspub"
 )
 
 // ----------------------------------------------------------------------------
