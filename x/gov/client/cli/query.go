@@ -73,8 +73,8 @@ func GetCmdQueryProposals(queryRoute string, cdc *codec.Codec) *cobra.Command {
 		Long: strings.TrimSpace(`
 Query for a all proposals. You can filter the returns with the following flags:
 
-$ gaiacli query gov proposals --depositor cosmos1skjwj5whet0lpe65qaq4rpq03hjxlwd9nf39lk
-$ gaiacli query gov proposals --voter cosmos1skjwj5whet0lpe65qaq4rpq03hjxlwd9nf39lk
+$ gaiacli query gov proposals --depositor ftlnet1skjwj5whet0lpe65qaq4rpq03hjxlwd9nf39lk
+$ gaiacli query gov proposals --voter ftlnet1skjwj5whet0lpe65qaq4rpq03hjxlwd9nf39lk
 $ gaiacli query gov proposals --status (DepositPeriod|VotingPeriod|Passed|Rejected)
 `),
 		RunE: func(cmd *cobra.Command, args []string) error {
@@ -163,7 +163,7 @@ func GetCmdQueryVote(queryRoute string, cdc *codec.Codec) *cobra.Command {
 Query details for a single vote on a proposal given its identifier.
 
 Example:
-$ gaiacli query gov vote 1 cosmos1skjwj5whet0lpe65qaq4rpq03hjxlwd9nf39lk
+$ gaiacli query gov vote 1 ftlnet1skjwj5whet0lpe65qaq4rpq03hjxlwd9nf39lk
 `),
 		RunE: func(cmd *cobra.Command, args []string) error {
 			cliCtx := context.NewCLIContext().WithCodec(cdc)
@@ -282,7 +282,7 @@ func GetCmdQueryDeposit(queryRoute string, cdc *codec.Codec) *cobra.Command {
 Query details for a single proposal deposit on a proposal by its identifier.
 
 Example:
-$ gaiacli query gov deposit 1 cosmos1skjwj5whet0lpe65qaq4rpq03hjxlwd9nf39lk
+$ gaiacli query gov deposit 1 ftlnet1skjwj5whet0lpe65qaq4rpq03hjxlwd9nf39lk
 `),
 		RunE: func(cmd *cobra.Command, args []string) error {
 			cliCtx := context.NewCLIContext().WithCodec(cdc)

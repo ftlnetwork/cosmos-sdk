@@ -2,7 +2,7 @@
 swagger: '2.0'
 info:
   version: "3.0"
-  title: Gaia-Lite for Cosmos
+  title: Gaia-Lite for FTLnetwork
   description: A REST interface for state queries, transaction generation, signing, and broadcast.
 tags:
 - name: ICS0
@@ -218,7 +218,7 @@ paths:
       - in: query
         name: tag
         type: string
-        description: "transaction tags such as 'action=submit-proposal' and 'proposer=cosmos1g9ahr6xhht5rmqven628nklxluzyv8z9jqjcmc' which results in the following endpoint: 'GET /txs?action=submit-proposal&proposer=cosmos1g9ahr6xhht5rmqven628nklxluzyv8z9jqjcmc'"
+        description: "transaction tags such as 'action=submit-proposal' and 'proposer=ftlnet1g9ahr6xhht5rmqven628nklxluzyv8z9jqjcmc' which results in the following endpoint: 'GET /txs?action=submit-proposal&proposer=ftlnet1g9ahr6xhht5rmqven628nklxluzyv8z9jqjcmc'"
         required: true
       - in: query
         name: page
@@ -2099,10 +2099,10 @@ definitions:
         example: Main Account
       address:
         type: string
-        example: cosmos1depk54cuajgkzea6zpgkq36tnjwdzv4afc3d27
+        example: ftlnet1depk54cuajgkzea6zpgkq36tnjwdzv4afc3d27
       pub_key:
         type: string
-        example: "cosmospub1addwnpepqtqc88gfdxyzcdm2eqr3tnlnxnelyqehy8k95qzgwdz5zccdft9rq5q7wj2"
+        example: "ftlnetpub1addwnpepqtqc88gfdxyzcdm2eqr3tnlnxnelyqehy8k95qzgwdz5zccdft9rq5q7wj2"
       type:
         type: string
         example: local

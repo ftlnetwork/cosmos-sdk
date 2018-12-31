@@ -31,10 +31,10 @@ func init() {
 
 var initCmd = &cobra.Command{
 	Use:   "init [ProjectName]",
-	Short: "Initialize your new cosmos zone",
+	Short: "Initialize your new ftlnetwork zone",
 	Args:  cobra.ExactArgs(1),
 	RunE: func(cmd *cobra.Command, args []string) error {
-		fmt.Print("Thanks for choosing Cosmos-SDK to build your project.\n\n")
+		fmt.Print("Thanks for choosing FTLnetwork-SDK to build your project.\n\n")
 		projectName := args[0]
 		capitalizedProjectName := strings.Title(projectName)
 		shortProjectName := strings.ToLower(projectName)
@@ -71,7 +71,7 @@ func copyBasecoinTemplate(projectName string, projectPath string, remoteProjectP
 				return err
 			}
 			contents := string(data)
-			// Extract relative file path eg: app/app.go instead of /Users/..../github.com/cosmos/...examples/basecoin/app/app.go
+			// Extract relative file path eg: app/app.go instead of /Users/..../github.com/ftlnetwork/...examples/basecoin/app/app.go
 			relativeFilePath := path[len(basecoinProjectPath)+1:]
 			// Evaluating the filepath in the new project folder
 			projectFilePath := projectPath + string(os.PathSeparator) + relativeFilePath
@@ -95,9 +95,9 @@ func createGopkg(projectPath string) {
 	// Create gopkg.toml file
 	dependencies := map[string]string{
 		"github.com/ftlnetwork/ftlnetwork-sdk": "=" + version.Version,
-		"github.com/stretchr/testify":  "=1.2.1",
-		"github.com/spf13/cobra":       "=0.0.1",
-		"github.com/spf13/viper":       "=1.0.0",
+		"github.com/stretchr/testify":          "=1.2.1",
+		"github.com/spf13/cobra":               "=0.0.1",
+		"github.com/spf13/viper":               "=1.0.0",
 	}
 	overrides := map[string]string{
 		"github.com/golang/protobuf":       "1.1.0",
@@ -117,7 +117,7 @@ func createGopkg(projectPath string) {
 // nolint: errcheck
 func createMakefile(projectPath string) {
 	// Create makefile
-	// TODO: Should we use tools/ directory as in Cosmos-SDK to get tools for linting etc.
+	// TODO: Should we use tools/ directory as in FTLnetwork-SDK to get tools for linting etc.
 	makefileContents := `PACKAGES=$(shell go list ./... | grep -v '/vendor/')
 
 all: get_tools get_vendor_deps build test
